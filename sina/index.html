@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>新浪首页</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+	<body>
+		<!--顶部导航条-->
+		<div class="header">
+			<div class="header_top">
+				<div class="header_top_left">
+					<ul>
+						<li class="fl"><a href="#">设为首页</a></li>
+						<li class="fl">
+							<a href="#">手机新浪网</a>
+						</li>
+						<li class="fl narrow_down1"  onmouseover="setTimeout(clientover,500);" onmouseout="setTimeout(clientout,500)">
+							<a href="#">移动客户端 <span id="spanid">&nbsp;</span></a>
+							<div id="dropdown_client" class="display_hidden">
+								<ul>
+									<li><a href="#">新浪微博</a></li>
+									<li><a href="#">新浪新闻</a></li>
+									<li><a href="#">新浪财经</a></li>
+									<li><a href="#">新浪体育</a></li>
+									<li><a href="#">新浪娱乐</a></li>
+									<li><a href="#">新浪港澳通</a></li>
+									<li><a href="#">新浪博客</a></li>
+									<li><a href="#">天气通</a></li>
+									<li><a href="#">新浪游戏</a></li>
+									<li><a href="#">新浪众测</a></li>
+								</ul>
+							</div>	
+						</li>
+					</ul>
+				</div>
+				<div class="header_top_right">
+					<ul class="fr">
+						<li class="fl">
+							<div class="header_denglu" style="position: relative;">
+								<a href="#">登录</a>
+								<div class="display_hidden" id="dropdown_denglu">
+									<div class="cancel">
+										<span class="fr" style="">×</span>
+									</div>
+									<div class="dd_denglu_left fl">
+										<p>用微博客户端扫描安全登录</p>
+										<img style="cursor: pointer;" src="img/weibo.png"/>
+									</div>
+									<div class="dd_denglu_right fr">
+										<div id="img1" class="display_hidden" style="position: absolute;left:160px;top: 60px;z-index: 100;">
+											<img src="img/wbjc.png"/>
+										</div>
+										<div class="dd_denglu_right_shuru">
+											<p>新浪微博、博客、邮箱帐号，请直接登录</p>
+											<input type="text" name="" id="" value="" placeholder="微博/博客/邮箱/手机号"/>
+											<input type="password" name="" id="" value="" placeholder="密码"/>
+										</div>
+										<div class="dd_denglu_right_queren">
+											<a href="#">登录</a>
+											<input type="checkbox" name="" id="" value="" /><span>下次自动登录</span>
+										</div>
+										<div class="dd_denglu_right_forgetregister">
+											<a href="#">忘记密码</a><a href="#">立即注册</a>
+										</div>
+										<div class="dd_denglu_right_qq">
+											<span class="fl"></span>
+											<a href="#" class="fl">使用QQ登录</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="fl narrow_down">
+							<a href="#">微博<span id="spanid">&nbsp;</span></a>
+							<ul>
+								<li><a href="#">私信</a></li>
+								<li><a href="#">评论</a></li>
+								<li><a href="#">@我</a></li>
+							</ul>
+						</li>
+						<li class="fl narrow_down">
+							<a href="#">博客 <span id="spanid">&nbsp;</span></a>
+							<ul>
+								<li><a href="#">博客评论</a></li>
+								<li><a href="#">未读提醒</a></li>
+							</ul>
+						</li>
+						<li class="fl narrow_down">
+							<a href="#">邮箱 <span id="spanid">&nbsp;</span></a>
+							<ul>
+								<li><a href="#">免费邮箱</a></li>
+								<li><a href="#">VIP邮箱</a></li>
+								<li><a href="#">企业邮箱</a></li>
+							</ul>
+						</li>
+						<li class="fl"><a href="#">网站导航 </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--logo和搜索区-->
+		<div class="search">
+			<!--logo-->
+			<div class="logo fl">
+				<img src="img/sinalogo.png"/>
+			</div>
+			<!--搜索框-->
+			<div class="serchinput fl">
+				<div class="serchinput_style">
+					<p class="fl" onclick="selectedtitle();"><span>新闻</span></p>
+					<div id="dropdown_searchkey" class="display_hidden">
+						<ul>
+							<li onclick="chgtitle(this);">新闻</li>
+							<li onclick="chgtitle(this);">微博</li>
+							<li onclick="chgtitle(this);">图片</li>
+							<li onclick="chgtitle(this);">博客</li>
+							<li onclick="chgtitle(this);">视频</li>
+							<li><a href="#">更多>></a></li>
+						</ul>
+					</div>
+				</div>
+				<input class="fl" type="text" name="" id="news" value="请输入关键词" />
+				<input class="fl searchicon" type="button" name="" id="" value="" />
+		</div>
+			<!--天气-->
+			<div class="ser_weather fl">
+				<a href="">
+					<span class="fl" title="广州">广州</span>
+					<img class="fl" src="img/weather1.png" title="多云"/>
+					<span class="fl">33℃</span>
+				</a>
+			</div>
+			<!--广告-->
+			<div class="ad fr">
+				<!--公益广告-->
+				<div class="pulicAd fl">
+					<img src="img/publicAd.jpg"/>
+				</div>
+				<!--轮播举报广告-->
+				<div class="reportAd fl">
+					<ul class="slider">
+						<li><a href="#"><img src="img/Adslide_1.png"/></a></li>
+						<li><a  href="#"><img src="img/Adslide_2.png"/></a></li>
+						<li><a  href="#"><img src="img/Adslide_3.png"/></a></li>
+						<li><a  href="#"><img src="img/Adslide_4.png"/></a></li>
+						<li><a  href="#"><img src="img/Adslide_5.png"/></a></li>
+					</ul>					
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;height: 15px;"></div>
+		<!--分类区-->
+		<div class="sort">
+			<div class="sort_detail fl">
+				<ul>
+					<li class="fl"><a href="#"><b>新闻</b></a></li>
+					<li class="fl"><a href="#">军事</a></li>
+					<li class="fl"><a href="#">社会</a></li>
+					<li class="fl"><a href="#">国际</a></li>
+				</ul>
+				<ul>
+					<li class="fl"><a href="#"><b>财经</b></a></li>
+					<li class="fl"><a href="#">股票</a></li>
+					<li class="fl"><a href="#">基金</a></li>
+					<li class="fl"><a href="#">外汇</a></li>
+				</ul>
+				<ul>
+					<li class="fl"><a href="#"><b>科技</b></a></li>
+					<li class="fl"><a href="#">手机</a></li>
+					<li class="fl"><a href="#">探索</a></li>
+					<li class="fl"><a href="#">众测</a></li>
+				</ul>
+			</div>
+			<div class="sort_detail fl">
+				<ul>
+					<li class="fl"><a href="#"><b>体育</b></a></li>
+					<li class="fl"><a href="#">NBA</a></li>
+					<li class="fl"><a href="#">英超</a></li>
+					<li class="fl"><a href="#">中超</a></li>
+				</ul>
+				<ul>
+					<li class="fl"><a href="#"><b>娱乐</b></a></li>
+					<li class="fl"><a href="#">明星</a></li>
+					<li class="fl"><a href="#">电影</a></li>
+					<li class="fl"><a href="#">星座</a></li>
+				</ul>
+				<ul>
+					<li class="fl"><a href="#"><b>汽车</b></a></li>
+					<li class="fl"><a href="#">报价</a></li>
+					<li class="fl"><a href="#">买车</a></li>
+					<li class="fl"><a href="#">新车</a></li>
+				</ul>
+			</div>
+			<div class="sort_detail fl" style="width: 185px;">
+				<ul>
+					<li class="fl"><a href="#"><b>博客</b></a></li>
+					<li class="fl" style="width: 36px;"><a href="#">专栏</a></li>
+					<li class="fl"><a href="#">历史</a></li>
+					<li class="fl"><a href="#">天气</a></li>
+				</ul>
+				<ul>
+					<li class="fl"><a href="#"><b>视频</b></a></li>
+					<li class="fl" style="width: 36px;"><a href="#">综艺</a></li>
+					<li class="fl"><a href="#">VR</a></li>
+					<li class="fl"><a href="#">直播</a></li>
+				</ul>
+				<ul>
+					<li class="fl" ><a href="#"><b>房产</b></a></li>
+					<li class="fl" style="width: 36px;"><a href="#">二手房</a></li>
+					<li class="fl"><a href="#">家居</a></li>
+					<li class="fl"><a href="#">收藏</a></li>
+				</ul>
+			</div>
+			<div class="sort_detail fl">
+				<ul>
+					<li class="fl"><a href="#"><b>时尚</b></a></li>
+					<li class="fl"><a href="#">女性</a></li>
+					<li class="fl"><a href="#">医药</a></li>
+					<li class="fl"><a href="#">育儿</a></li>
+				</ul>
+				<ul>
+					<li class="fl"><a href="#"><b>教育</b></a></li>
+					<li class="fl"><a href="#">高考</a></li>
+					<li class="fl"><a href="#">公益</a></li>
+					<li class="fl"><a href="#">佛学</a></li>
+				</ul>
+				<ul>
+					<li class="fl"><a href="#"><b>图片</b></a></li>
+					<li class="fl"><a href="#">读书</a></li>
+					<li class="fl"><a href="#">黑猫</a></li>
+					<li class="fl"><a href="#">司法</a></li>
+				</ul>
+			</div>
+			<div class="sort_detail fl" style="width: 185px;">
+				<ul>
+					<li class="fl"><a href="#"><b>微博</b></a></li>
+					<li class="fl"><a href="#">城市</a></li>
+					<li class="fl"><a href="#">广东</a></li>
+					<li class="fl" style="width: 36px;"><a href="#">学投资</a></li>
+				</ul>
+				<ul>
+					<li class="fl"><a href="#"><b>旅游</b></a></li>
+					<li class="fl"><a href="#">文化</a></li>
+					<li class="fl"><a href="#">彩票</a></li>
+					<li class="fl" style="width: 36px;"><a href="#">高尔夫</a></li>
+				</ul>
+				<ul>
+					<li class="fl"><a href="#"><b>游戏</b></a></li>
+					<li class="fl"><a href="#">手游</a></li>
+					<li class="fl"><a href="#">邮箱</a></li>
+					<li class="fl" style="width: 36px;"><a href="#">English</a></li>
+				</ul>
+			</div>
+			<div class="sort_detail_more fl">
+				<ul>
+					<li><a href="#">交易</a></li>
+					<li><a href="#">理财</a></li>
+					<div onmouseover="moreover();" onmouseout="moreout();">
+					<li style="width: 40px;"><a href="#">更多<span id="spanid">&nbsp;</span></a>
+						<div id="dropdown_more" class="display_hidden">
+							<ul>
+								<li><a href="#">政务</a></li>
+								<li><a href="#">车险</a></li>
+								<li><a href="#">页游</a></li>
+								<li><a href="#">SHOW</a></li>
+								<li><a href="#">搜索</a></li>
+								<li><a href="#">客服</a></li>
+								<li><a href="#">导航</a></li>
+							</ul>
+						</div>	
+					</li>	
+					</div>
+				</ul>
+			</div>
+		</div>
+		<div style="clear: both;height: 20px;"></div>			
+		<!--广告区-->
+		<div class="ad_main">
+			<ul>
+				<li class="fl"><a href="#">带你去看激情世界杯</a></li>
+				<li class="fl"><a href="#">Propy海外房地产</a></li>
+				<li class="fl"><a href="#">全球地产影响力评选</a></li>
+				<li class="fl"><a href="#">最高可赢4499元电视</a></li>
+				<li class="fl"><a href="#">现在签约就减1000元</a></li>
+				<li class="fl"><a href="#">40年家具购买简史</a></li>
+				<li class="fl"><a href="#">乐居问答等你来聊</a></li>
+				<li class="fl"><a href="#">广深港高铁将通车</a></li>
+				<li class="fl"><a href="#">立即领取限量工具箱</a></li>
+				<li class="fl"><a href="#">90㎡装出大空间</a></li>
+				<li class="fl"><a href="#">京东家博会免费索票</a></li>
+				<li class="fl"><a href="#">省心装修优惠不停</a></li>
+				<li class="fl"><a href="#">紧急招募城市合伙人</a></li>
+				<li class="fl"><a href="#">新浪装修商务合作</a></li>
+				<li class="fl"><a href="#">秦皇岛购房指南</a></li>
+				<li class="fl"><a href="#">阳台装出小卧室</a></li>
+			</ul>
+		</div>
+		<div style="clear: both;height: 30px;"></div>
+		<!--main网页主体-->
+		<div class="main">
+			<!--main_aside-->
+			<div class="main_aside fl">
+				<div class="pic_lunbo">
+					<div class="pic_lunbo_each">
+						<ul id="imgslider">
+							<li class="fl">
+								<img src="img/asidelunboimg1_1.jpg"/>
+								<span class="fl"><a href="">新人拍婚纱照 长颈鹿抢镜送祝福</a></span>
+							</li>
+							<li class="fl">
+								<img src="img/asidelunboimg1_2.jpg"/>
+								<span class="fl"><a href="">亚运百米大战——苏炳添夺冠</a></span>
+							</li>
+							<li class="fl">
+								<img src="img/asidelunboimg1_3.jpg"/>
+								<span class="fl"><a href="">张馨予梦幻婚礼丈夫吻手背</a></span>
+							</li>
+							<li class="fl">
+								<img src="img/asidelunboimg1_4.jpg"/>
+								<span class="fl"><a href="">刘雯盖章：土酷穿搭回潮了</a></span>
+							</li>
+						</ul>
+					</div>
+					<div class="pic_lunbo_control">
+						<a class="contrl1_left"></a>
+						<a class="contrl1_right"></a>
+						<div class="span_list">
+							<ul class="fl">
+								<li class="span_list_each span_enter fl"></li>
+								<li class="span_list_each fl"></li>
+								<li class="span_list_each fl"></li>
+								<li class="span_list_each fl"></li>
+							</ul>
+						</div>
+					</div>
+					<!--左侧第一个图片轮播jq-->
+					<script type="text/javascript">
+						var piclength = $(".span_list ul li").length;
+						var i = 0;
+						var timer;
+						$(".span_list ul li").mouseover(function(){
+							i = $(".span_list ul li").index(this);
+							showPic(i);
+						}).eq(0).mouseover();
+						$(".pic_lunbo").hover(function(){
+							clearInterval(timer);
+						}, function(){
+					        timer = setInterval(function() {
+					            showPic(i)
+					            i++;
+					            if (i == piclength) {       //最后一张图片之后，转到第一张
+					                i = 0;
+					            }
+					        }, 3000);
+						}).trigger("mouseleave");
+						function showPic(i){
+							$(".span_list li").removeClass("span_enter")
+							.eq(i).addClass("span_enter");
+							var picwidth = $(".pic_lunbo_each ul li").width();
+							$("#imgslider").stop(true,false).animate({
+								"marginLeft":-picwidth*i +"px"
+							},1000);	
+						}
+						$(".pic_lunbo_control .contrl1_left").click(function(){
+							if(i>0){
+								i--;
+								showPic(i);							
+							}else{
+								i=piclength-1;
+								showPic(i);
+							}
+						})
+						$(".pic_lunbo_control .contrl1_right").click(function(){
+							if(i<3){
+								i++;
+								showPic(i);
+								clearInterval(timer);
+							}else{
+								i = 0;
+								showPic(i);
+								clearInterval(timer);
+							}
+							
+						})
+					</script>
+				</div>
+				<div style="height: 25px;"></div>
+				<div class="main_aside_slide">
+					<ul>
+						<li>
+							<p class="fl"><a href="#">新浪产品</a></p>
+							<div class="fr">
+								<a class="a_left a_left_tab1 fl" style="display: block;margin-top: 5px;"></a>
+								<a class="a_right a_right_tab1 fl" style="margin-top: 5px;"></a>
+							</div>
+						</li>
+						<li>
+							<div id="" class="fl">
+								<div class="p_pre fl">
+								<a class="fr" href="#">往期回顾</a>
+								</div>
+								<div>
+									<a href="#"><img class="fl" src="img/asidetabpic1_3.jpg"/></a>
+									<div class="fl">
+										<P><a href="#">睡眠不足可使人更加孤独？</a></P>
+										<P><a href="#">满足好奇心</a></P>
+									</div>
+								</div>
+							</div>
+							<div id="" class="fl">
+								<div class="content2">
+									<div  class="content2_1">
+										<p class="fl"><a href="#">车型大全</a></p>
+										<a class="fr" href="">购车完全指南</a>
+									</div>
+									<div>
+										<ul>
+											<li class="fl"><a href="">5-8万</a></li>
+											<li class="fl"><a href="">8-11万</a></li>
+											<li class="fl"><a href="">11-15万</a></li>
+											<li class="fl"><a href="">15-20万</a></li>
+											<li class="fl"><a href="">20-25万</a></li>
+											<li class="fl"><a href="">25-35万</a></li>
+											<li class="fl"><a href="">35-50万</a></li>
+											<li class="fl"><a href="">更多选择</a></li>
+										</ul>
+									</div>
+									<!--<img src="img/car_pic.png"/>-->
+									<div style="clear: both;"></div>
+									<div class="car_display">
+										<a href="" class="fl">
+											<span class="car_1"></span>
+											<p>小型</p>
+										</a>
+										<a href="" class="fl">
+											<span class="car_2"></span>
+											<p>紧凑型</p>
+										</a>
+										<a href="" class="fl">
+											<span class="car_3"></span>
+											<p>中型</p>
+										</a>
+										<a href="" class="fl">
+											<span class="car_4"></span>
+											<p>SUV</p>
+										</a>
+									</div>
+									<div style="clear: both;"></div>
+									<div style="clear:both;margin-top: 10px;">
+										<a class="a_border fl" href="">品牌大全</a>
+										<a class="a_border fl"  href="">购车指南</a>
+										<a class="a_border fl"  href="">高清实拍</a>
+									</div>			
+								</div>
+							</div>
+							<div id="" class="fl">
+								<div class="content2">
+									<div class="content2_1">
+										<p class="fl"><a href="#">新浪众测</a></p>
+										<a class="fr" href="">送Q币：分享童年动画</a>
+									</div>
+									<a href="">深度清洁紧缩毛孔的洁面仪</a>
+									<div class="content2_2">
+										<img class="fl" src="img/asidetabpic3_1.jpg"/>
+										<div class="fl">
+											<p style="height: 25px;">价格：<span>¥368</span></p>
+											<p style="height: 25px;">数量：<span>30台</span></p>
+											<a href="">免费申请</a>
+										</div>
+									</div>
+									<div style="clear: both;height: 15px;"></div>
+									<div class="item_display">
+										<a href="" class="fl">华硕路由器</a>
+										<a href="" class="fr">轻型小牛电动车</a>
+									</div>		
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--新浪产品左侧选项卡（新浪产品）-->
+				
+				<div style="clear:both;height: 25px;"></div>
+				<div class="main_aside_slide_pick">
+					<ul>
+						<li>
+							<ul>
+								<li class="fl slide_pick" onmouseover="pickaside(0)"><a href="#">高考</a></li>
+								<li class="fl" onmouseover="pickaside(1)"><a href="#">热卖</a></li>
+								<li class="fl" onmouseover="pickaside(2)"><a href="#">新款</a></li>
+								<li class="fl" onmouseover="pickaside(3)"><a href="#">淘宝</a></li>
+							</ul>
+						</li>
+						<li>
+							<div ><img src="img/slidepickimg1.jpg"/></div>
+							<div class="display_hidden"><img src="img/slidepickimg2.jpg"/></div>
+							<div class="display_hidden"><img src="img/slidepickimg1.jpg"/></div>
+							<div class="display_hidden"><img src="img/slidepickimg2.jpg"/></div>
+						</li>
+					</ul>
+					<script type="text/javascript">
+						$(function(){
+							$(".main_aside_slide_pick>ul>li>ul>li").mouseover(function(){
+								$(this).addClass("slide_pick");
+								
+							}).mouseout(function(){
+								$(this).removeClass("slide_pick");
+							})
+						})
+					</script>
+				</div>
+				<div style="height: 27px;"></div>
+				<div class="main_aside_slide_more">
+					<ul>
+						<li>
+							<p class="fl"><a href="#">独家体坛</a></p>
+							<a class="a_aside_more fr" href="">更多>></a>
+						</li>
+						<li style="margin-top: 10px;margin-left: 5px;">
+							<div class="img_news fl">
+								<a class="fl" href="">
+									<img class="fl" src="img/slidemorepic.jpg"/>
+									<span>盘点可能退役球星</span>
+								</a>
+							</div>
+							<div class="p_news p_news_leftmore fl" style="margin-top: 0px;margin-left: 10px;">
+								<p><a class="" href="">我的青春卒于2018</a></p>
+								<p><a class="" href="">科比致敬吉诺比利</a></p>
+								<p><a class="" href="">詹皇身边打球方吗</a></p>
+								<p><a class="" href="">勇士还有1人要走?</a></p>
+							</div>
+							<div class="p_news p_news_leftmore fl" style="margin-top: 0px;margin-left: 0px;">
+								<p><a class="" href="">私人飞机大PK：C罗3170万排第1 梅西第2</a></p>
+								<p><a class="" href="">皇马比巴萨还传控看传球数+成功率+触球</a></p>
+								<p><a class="" href="">伊涅斯塔:来日踢球选择正确 忘不了巴萨</a></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--最后一个图片轮播-->
+				<div class="main_aside_lunbo2">
+					<a href=""><img src="img/jdadpic.jpg"/></a>
+					<a href=""><img src="img/ad_jd.png"/></a>
+				</div>
+			</div>
+			<!--main_middle-->
+			<div class="main_middle fl">
+				<div class="main_middle_tab">
+					<ul>
+						<li onmouseover="maintabover(this,0);" class="tab_selected  fl" style="border-left: none;margin-left: -1px;"><a href="#">图片</a></li>
+						<li onmouseover="maintabover(this,1);" class="fl"><a href="#">专栏</a></li>
+						<li onmouseover="maintabover(this,2);" class="fl"><a href="#">热点</a></li>
+					</ul>
+				</div>
+				<div id="main_middle_tabselect" style="margin-top: 25px;">
+					<div class="main_middle_tabselectpic">
+						<div class="img_news">
+							<a class="fl" href="#">
+							<img class="fl" src="img/tabselectpic_1.png"/>
+							<span>司机忍骨折送客</span>
+							</a>
+							<a class="fl" href="#" style="margin: 0px 19px;">
+								<img class="fl" src="img/tabselectpic_2.png"/>
+								<span>特鲁多现同志游行</span>
+							</a>
+							<a class="fl" href="#">
+								<img class="fl" src="img/tabselectpic_3.jpg"/>
+								<span>自助式养老</span>
+							</a>
+						</div>
+						<div style="clear: both;"></div>
+						<div class="p_news">
+							<p><a class="a_pic_left" href="">山东13市遭台风已致24死</a> <a href="">广州一公寓清晨起火</a></p>
+							<p><a class="a_pic_left" href="">巴黎持刀袭击事件致2死1伤</a> <a href="">青岛海滨掀起大浪</a></p>
+							<p><a class="a_pic_left" href="">孕妻凌晨爬出11楼窗户</a> <a href="">奇瓜异果聚长春现146斤瓜王</a></p>
+							<p><a class="a_pic_left" href="">吴亦凡雅痞大片酷劲十足 </a> <a href="">51岁周慧敏穿花裙似少女</a></p>
+						</div>
+					</div>
+					<div class="main_middle_tabselectpic display_hidden">
+						<div class="img_news">
+							<a class="fl" href="#">
+							<img class="fl" src="img/tabselectpic1_1.jpg"/>
+							<span>壮美黄石公园</span>
+							</a>
+							<a class="fl" href="#" style="margin: 0px 19px;">
+								<img class="fl" src="img/tabselectpic1_2.jpg"/>
+								<span>缅甸早市众生相</span>
+							</a>
+							<a class="fl" href="#">
+								<img class="fl" src="img/tabselectpic1_3.jpg"/>
+								<span>离天最近的秘境</span>
+							</a>
+						</div>
+						<div style="clear: both;"></div>
+						<div class="p_news">
+							<p><a href="">《如懿传》能逆风翻盘吗</a> <a href=""> 杨超越为什么能躺赢？</a></p>
+							<p><a href="">赢菲律宾，怎么就不能高兴？</a> <a href=""> 孙杨没头脑和我们不高兴</a></p>
+							<p><a href="">万科麻烦了 </a> <a href="">电竞怎么赚钱？</a></p>
+							<p><a href="">只有酒 ？绍兴应该怎么玩？ </a> <a href="">悼念刘振夏同志：艺术生命 </a></p>
+						</div>
+					</div>
+					<div class="main_middle_tabselectpic display_hidden">
+						<div class="img_news">
+							<a class="fl" href="#">
+							<img class="fl" src="img/tabselectpic2_1.jpg"/>
+							<span>利比亚检查站遭袭</span>
+							</a>
+							<a class="fl" href="#" style="margin: 0px 19px;">
+								<img class="fl" src="img/tabselectpic2_2.jpg"/>
+								<span>尤文备战C罗抢镜</span>
+							</a>
+							<a class="fl" href="#">
+								<img class="fl" src="img/tabselectpic2_3.jpg"/>
+								<span>偶遇赵丽颖冯绍峰</span>
+							</a>
+						</div>
+						<div style="clear: both;"></div>
+						<div class="p_news">
+							<p><a href="">90后借钱消费成常态 </a> <a href="">“以贷养贷”比月光族更可怕</a></p>
+							<p><a class="a_pic_left" href="">波黑两列火车相撞致2死 </a> <a href="">贵州一狗发狂咬死8岁男孩</a></p>
+							<p><a href="">王蔷胜张帅卫冕亚运女单金牌 </a> <a href="">美网抽签费德勒小德同区</a></p>
+							<p><a class="a_video_left" href="">何炅微博粉丝破亿  </a> <a class="a_video_left" href="">TFBOYS联排被迫取消</a></p>
+						</div>
+					</div>
+				</div>
+				<div style="height: 20px;"></div>
+				<div class="main_middle_tab">
+					<ul>
+						<li onmouseover="maintabover(this,0);" class="tab_selected  fl" style="border-left: none;margin-left: -1px;"><a href="#">视频</a></li>
+						<li onmouseover="maintabover(this,1);" class="fl"><a href="#">秒拍</a></li>
+						<li onmouseover="maintabover(this,2);" class="fl"><a href="#">综艺</a></li>
+					</ul>
+				</div>
+				<div id="main_middle_tabselect">
+					<div class="main_middle_tabselectpic">
+						<div class="video_news fl">
+							<a class="fl" href="#">
+								<img class="fl" src="img/tabselectvideopic1_1.png"/>
+								<i class="play_icon"></i>
+								<span>女孩坐滴滴遇害</span>
+							</a>
+							<div style="height: 15px;clear: both;"></div>
+							<a class="fl" href="#">
+								<img class="fl" src="img/tabselectvideopic1_2.jpg"/>
+								<i class="play_icon"></i>
+								<span>孙杨回应领奖风波</span>
+							</a>
+						</div>
+						<div class="p_news p_video_news fl" style="margin-top: -5px;">
+							<p><a class="a_video_left" href="">哈尔滨一酒店火灾致18人遇难</a></p>
+							<p><a class="a_video_left" href="">孙杨抱记者痛哭</a> <a>游客抢气球</a></p>
+							<p><a class="a_video_left" href="">肯德基运毒秘道</a> <a href="">平衡车着火</a></p>
+							<p><a class="a_video_left" href="">外卖备注救我</a> <a href="">女挥菜刀自卫</a></p>
+							<p><a class="a_video_left" href="">王源疑似被激光笔照伤眼睛</a></p>
+							<p><a class="a_video_left" href="">张靓颖为好闺蜜刘亦菲庆生</a></p>
+							<p><a class="a_video_left" href="">U20女足世界杯 </a> <a href="">英格兰获季军</a></p>
+							<p><a class="a_video_left" href="">U20日本3-1西班牙首次夺冠</a></p>
+						</div>
+					</div>
+					<div class="main_middle_tabselectpic display_hidden">
+						<div class="video_news fl">
+							<a class="fl" href="#">
+								<img class="fl" src="img/tabselectvideopic2_1.jpg"/>
+								<i class="play_icon"></i>
+								<span>李治廷又要皮一下</span>
+							</a>
+							<div style="height: 15px;clear: both;"></div>
+							<a class="fl" href="#">
+								<img class="fl" src="img/tabselectvideopic2_2.jpg"/>
+								<i class="play_icon"></i>
+								<span>直男癌PK公主病</span>
+							</a>
+						</div>
+						<div class="p_news p_video_news fl" style="margin-top: -5px;">
+							<p><a class="a_video_left" href="">韩庚自曝是网瘾少年？</a></p>
+							<p><a class="a_video_left" href="">谁偷吃了张馨予的玉米</a></p>
+							<p><a class="a_video_left" href="">小猪姐姐的金秘书仿妆</a></p>
+							<p><a class="a_video_left" href="">寻味手札.芝士爆浆鸡排</a></p>
+							<p><a class="a_video_left" href="">5款喷上秒变仙女的香水</a></p>
+							<p><a class="a_video_left" href="">为啥床垫的塑料膜要撕掉</a></p>
+							<p><a class="a_video_left" href="">做上3组动作在家轻松瘦腿 </a></p>
+							<p><a class="a_video_left" href="">图解狗狗从走到跑的步伐</a></p>
+						</div>
+					</div>
+					<div class="main_middle_tabselectpic display_hidden">
+						<div class="video_news fl">
+							<a class="fl" href="#">
+								<img class="fl" src="img/tabselectvideopic3_1.jpg"/>
+								<i class="play_icon"></i>
+								<span>独家专访蔡徐坤</span>
+							</a>
+							<div style="height: 15px;clear: both;"></div>
+							<a class="fl" href="#">
+								<img class="fl" src="img/tabselectvideopic3_2.png"/>
+								<i class="play_icon"></i>
+								<span>那吾克热赞吴亦凡</span>
+							</a>
+						</div>
+						<div class="p_news p_video_news fl" style="margin-top: -5px;">
+							<p><a class="a_video_left" href="">妻旅：陈小春劝应采儿改嫁</a></p>
+							<p><a class="a_video_left" href="">三重奏：汪小菲《泡沫之夏》</a></p>
+							<p><a class="a_video_left" href="">幻乐：王菲狂夸赞窦靖童作品</a></p>
+							<p><a class="a_video_left" href="">快本：《延禧攻略》剧组来袭</a></p>
+							<p><a class="a_video_left" href="">举杯：阿娇自爆没想进娱乐圈</a></p>
+							<p><a class="a_video_left" href="">那小子：钱枫为王一博做陶艺</a></p>
+							<p><a class="a_video_left" href="">中餐厅：张铁林赵薇有朋重聚 </a></p>
+							<p><a class="a_video_left" href="">新说唱：吴亦凡公演展中国风</a></p>
+						</div>
+					</div>
+				</div>
+				
+				<div style="clear: both;height: 20px;"></div>
+				<div class="main_middle_tab">
+					<ul style="position: relative;">
+						<li class="tab_selected fl" style="border-left: none;margin-left: -1px;">
+							<span class="fl">猜你喜欢</span>
+							<div style="display: inline;height: 22px;line-height: 22px;">
+								<a class="a_left a_left_disp fl"></a>
+								<span class="span_pagelist">
+									<span class="span_page span_page_hover"></span>
+									<span class="span_page" ></span>
+									<span class="span_page" ></span>
+									<span class="span_page" ></span>
+									<span class="span_page" ></span>
+									<span class="span_page" ></span>
+								</span>
+								<a class="a_right a_right_disp fl"></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="boxcontent">
+					<div class="main_middle_pageselect">
+						<div class="main_middle_tabselectpic fl">
+							<div class="p_news fl" style="margin-top: -5px;">
+								<p><a class="" href="">64岁农村老人战胜癌症安全走过16年，他的成功有2个</a></p>
+								<p><a class="" href="">台当局发文使用日本年号 台网友痛骂：还在被殖民吗</a></p>
+								<p><a class="" href="">街拍：外国小姐姐的衣服太小了，看解开的扣子数量就</a></p>
+								<p><a class="" href="">等着我：儿子一条短信从此失联，母亲撕心裂肺跪地只</a></p>
+								<p><a class="" href="">吕洞宾到底是神仙还是凡人？ 墓葬被挖开后， 专家大</a></p>
+								<p><a class="" href="">顺风车业务被下线 滴滴的责任就完了吗？</a></p>
+								<p><a class="" href="">家里2个位置保持干净，保证你聚财不漏财！</a></p>
+								<p><a class="" href="">亚运会100米预赛，跑得最慢的人，让人无比心酸</a></p>
+							</div>
+						</div>
+						<div class="main_middle_tabselectpic fl">
+							<div class="p_news fl" style="margin-top: -5px;">
+								<p><a class="" href="">时尚江湖在变天 蜜桃臀王炸出道</a></p>
+								<p><a class="" href="">女司机的驾车技术可不是浪得虚名的男人看了也得汗颜</a></p>
+								<p><a class="" href="">恶作剧：小伙假装拿自喷漆去喷路人，路人以为是真油</a></p>
+								<p><a class="" href="">延禧攻略：她在延禧攻略中压轴出场，被称为尔晴转世</a></p>
+								<p><a class="" href="">美国暗潮汹涌, 50万人包围白宫, 高喊美国不需要特朗</a></p>
+								<p><a class="" href="">女孩去医院看望暗恋的人，得知他受伤的原因甩头就走</a></p>
+								<p><a class="" href="">男子将10万车改装成保时捷，两周睡了女子17次</a></p>
+								<p><a class="" href="">九个月以及九个月以上的宝宝餐来啦</a></p>
+							</div>
+						</div>
+						<div class="main_middle_tabselectpic fl">
+							<div class="p_news fl" style="margin-top: -5px;">
+								<p><a class="" href="">边境战士巡逻一次要被50只蚂蟥吸血 网友心疼质疑装</a></p>
+								<p><a class="" href="">王思聪首战比赛录音曝光，这句话他说了不止20遍</a></p>
+								<p><a class="" href="">高德暂停顺风车业务，嘀嗒顺风车仍可正常使用</a></p>
+								<p><a class="" href="">此地探明4000亿天价资源，美国果断出手，俄警告：那</a></p>
+								<p><a class="" href="">老师被婆婆整天羞辱，还要给儿子介绍对象，涂磊失控</a></p>
+								<p><a class="" href="">朱之文的特殊听众一上台朱之文得意忘形跳起舞气坏网</a></p>
+								<p><a class="a_video_left" href="">女孩乘滴滴遇害 司机群竟低俗调侃</a></p>
+								<p><a class="" href="">国际乒联宣布马龙许昕退赛！男队4将齐退赛 国乒提前</a></p>
+							</div>
+						</div>
+						<div class="main_middle_tabselectpic fl">
+							<div class="p_news fl" style="margin-top: -5px;">
+								<p><a class="" href="">狙击手的任务就是服从命令直接打爆直升机</a></p>
+								<p><a class="" href="">轻松一刻：嫂子嫁给黑人，次日扶腰说：我以为5次谁</a></p>
+								<p><a class="" href="">假如给你五十万，下面4位女孩中，你愿意娶图四吗</a></p>
+								<p><a class="" href="">到了美国超市，你才会明白物价里，包含了一个国家的</a></p>
+								<p><a class="" href="">《延禧攻略》中绒花与红楼中的宫花</a></p>
+								<p><a class="" href="">房产一大逆天消息, 开发商笑傻了, 深深戳穿中国楼市</a></p>
+								<p><a class="" href="">家里2个位置保持干净，保证你聚财不漏财！</a></p>
+								<p><a class="" href="">南风窗:我把性命托付滴滴 他却说已备好赔偿金？</a></p>
+							</div>
+						</div>
+						<div class="main_middle_tabselectpic fl">
+							<div class="p_news fl" style="margin-top: -5px;">
+								<p><a class="" href="">印度18岁美女和公狗结为夫妻，婚后美女的行为让人难</a></p>
+								<p><a class="" href="">农村已经消失不见的水果，吃过三种是土豪，全都吃过</a></p>
+								<p><a class="" href="">农村儿媳娘家来人婆婆急忙出去买菜让儿媳和家人好好</a></p>
+								<p><a class="" href="">《乐享河北》一部《延禧攻略》 藏了多少冀忆</a></p>
+								<p><a class="" href="">屌丝男士：大鹏带女儿逛公园，不料遇到套路王!</a></p>
+								<p><a class="" href="">拒绝日本乒协300万年薪的邀请，明升暗降后的刘国梁</a></p>
+								<p><a class="" href="">再见了，万达帝国：负债4205亿，王健林成“首负”！</a></p>
+								<p><a class="" href="">这五大生肖注意啦，九月桃花不请自来，桃花朵朵开，</a></p>
+							</div>
+						</div>
+						<div class="main_middle_tabselectpic fl">
+							<div class="p_news fl" style="margin-top: -5px;">
+								<p><a class="" href="">6. 64岁农村老人战胜癌症安全走过16年，他的成功有2个</a></p>
+								<p><a class="" href="">台当局发文使用日本年号 台网友痛骂：还在被殖民吗</a></p>
+								<p><a class="" href="">街拍：外国小姐姐的衣服太小了，看解开的扣子数量就</a></p>
+								<p><a class="" href="">等着我：儿子一条短信从此失联，母亲撕心裂肺跪地只</a></p>
+								<p><a class="" href="">吕洞宾到底是神仙还是凡人？ 墓葬被挖开后， 专家大</a></p>
+								<p><a class="" href="">顺风车业务被下线 滴滴的责任就完了吗？</a></p>
+								<p><a class="" href="">家里2个位置保持干净，保证你聚财不漏财！</a></p>
+								<p><a class="" href="">亚运会100米预赛，跑得最慢的人，让人无比心酸</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="pagelist_down">
+							<div class="p_news fl">
+								<p><a href="">小哥提车第2天追尾第3天下河 未上市领克03遭全球首撞</a></p>
+								<p><a href="">机场追星利益链 三亚明星楼盘被查封</a></p>
+								<span><a href="">投资海淀</a><span class=""> | </span><a href="">中关村国家示范区 海淀区创新1+4政策体系</a></span>
+							</div>
+					</div>
+				</div>
+				<!--猜你喜欢选项卡jq-->
+				
+				<div style="clear: both;height: 20px;"></div>
+				<!--体育NBA 体育视频块-->
+				<div class="main_middle_tab">
+					<ul>
+						<li onmouseover="maintabover(this,0);" class="tab_selected  fl" style="border-left: none;margin-left: -1px;"><a href="#">体育</a></li>
+						<li onmouseover="maintabover(this,1);" class="fl"><a href="#">NBA</a></li>
+						<li onmouseover="maintabover(this,2);" class="fl"><a href="#">体育视频</a></li>
+					</ul>
+				</div>
+				<div id="main_middle_tabselect" style="margin-top: 0px;">
+					<div class="recommendtitle">
+						<div style="clear: both;height: 8px;"></div>
+						<ul>
+							<li class="fl"><a href="">直播</a></li>
+							<li class="fl"><a href="">彩票</a></li>
+							<li class="fl"><a href="">高清图</a></li>
+							<li class="fl"><a href="">中超</a></li>
+							<li class="fl"><a href="">英超</a></li>
+							<li class="fl"><a href="">西甲</a></li>
+							<li class="fl"><a href="">欧冠</a></li>
+							<li class="fl"><a href="">中国篮球</a></li>
+							<li class="fl"><a href="">综合</a></li>
+							<li class="fl"><a href="">排行</a></li>
+						</ul>
+						<div style="clear: both;height: 10px;"></div>
+					</div>
+					<div class="main_middle_tabselectpic">
+						<div class="img_news fl">
+							<a class="fl" href="#">
+								<img class="fl" src="img/tabselectgympic1_1.jpg"/>
+								<span>直击苏炳添夺冠</span>
+							</a>
+						</div>
+						<div class="p_news fl" style="margin-top: -5px;margin-left: 16px;">
+							<p><a class="" href="">亚运会-苏炳添9秒92破纪录夺金</a></p>
+							<p><a class="" href="">填补亚运金牌空白 给日本重击</a></p>
+							<p><a class="" href="">日网友狂赞:中国除足球都很强啊</a></p>
+							<p><a class="" href="">中国女排完胜印度小组头名出线</a></p>
+						</div>
+						<div class="p_news fl" style="margin-top: 0px;">
+							<p><a class="" href="">权健因堵车没赶上赴日飞机</a> <a href="">费德勒:美网竞争将十分激烈</a></p>
+							<p><a class="" href="">NBA-库里呼吁美国改一现状</a> <a href="">联盟前五中的仨人又合练</a></p>
+							<p><a class="" href="">谌龙遭横扫国羽男单全军覆没</a> <a href="">创16年亚运最差战绩</a></p>
+							<p><a class="" href="">英超-阿扎尔进球切尔西2-1胜</a> <a href="">西甲-本泽马2球皇马4-1</a></p>
+							<p><a class="" href="">中超-黑风双煞三连斩人和3-1申花</a> <a href="">莫雷诺疑似肘击</a></p>
+							<p><a class="" href="">京媒:国安像巅峰的万达</a> <a href="">看现在中国球员怎么吃怎么练</a></p>
+							<p><a class="a_video_left" href="">视频-C罗加盟尤文纪录片</a> <a href="">詹皇千人面前跳<font style="font-size: 13px;">sickomode</font></a></p>
+							<p><a class="" href="">专栏-别骂国足他们就这水平</a> <a href="">博客-这国足让人看到希望</a></p>
+							<p><a class="" href="">退休电工中5千万彩票巨奖-图</a> <a href="">父亲劝儿子买彩中1369万</a></p>
+						</div>
+					</div>
+					<div class="main_middle_tabselectpic display_hidden">
+						<div class="img_news fl">
+							<a class="fl" href="#">
+								<img class="fl" src="img/tabselectgympic2_1.jpg"/>
+								<span>詹皇中国行</span>
+							</a>
+						</div>
+						<div class="p_news fl" style="margin-top: -5px;margin-left: 16px;">
+							<p><a class="" href="">联盟前五中的仨人又在一起合练</a></p>
+							<p><a class="" href="">詹皇第二偶像为天赋队把脉</a></p>
+							<p><a class="" href="">传奇-NBA史上最伟大的配角</a></p>
+							<p><a class="" href="">夏季签约转会汇总:火箭再入新人</a></p>
+						</div>
+						<div class="p_news fl" style="margin-top: 0px;">
+							<p><a class="" href="">库里呼吁美国社会改变一现状</a> <a href="">火箭操盘手为哈登庆生</a></p>
+							<p><a class="" href="">追星詹皇的那些事！</a> <a href="">姚明宿敌社交网站公布要重回NBA</a></p>
+							<p><a class="" href="">姚明晒出与新秀詹姆斯旧照</a> <a href="">勇士签考神对NBA完全公平</a></p>
+							<p><a class="" href="">勇士专门为他设计战术</a> <a href="">背运人球分过单臂劈扣!</a></p>
+							<p><a class="" href="">地球最强!2K给他95是胡扯</a> <a href="">塔图姆称17届这人是第一人</a></p>
+							<p><a class="" href="">火箭三哥点赞西蒙斯前女友玉照</a> <a href="">娱乐圈最铁詹蜜实锤了</a></p>
+							<p><a class="" href="">麦蒂晃倒人你见过吗</a> <a href="">7800万先生跟海鲜店对喷</a></p>
+							<p><a class="" href="">高清-科比在墨西哥虐狗</a> <a href="">关于NBA球员纹身的那些故事</a></p>
+							<p><a class="" href="">NBA休战期大数据透视帮你赢赚足彩</a> <a href="">今日焦点赛事解读</a></p>
+						</div>
+					</div>
+					<div class="main_middle_tabselectpic display_hidden">
+						<div class="img_news fl">
+							<a class="fl" href="#">
+								<img class="fl" src="img/tabselectgympic3_1.png"/>
+								<span>粉丝:孙杨表现完美</span>
+							</a>
+						</div>
+						<div class="p_news fl" style="margin-top: -5px;margin-left: 16px;">
+							<p><a class="a_video_left" href="">央视新闻刘文博采访</a></p>
+							<p><a class="a_video_left" href="">短片恶搞重度篮球爱好者</a></p>
+							<p><a class="a_video_left" href="">防守人被晃到劈叉</a></p>
+							<p><a class="a_video_left" href="">小伙训练不慎撞到椅子</a></p>
+						</div>
+						<div class="p_news fl" style="margin-top: 0px;">
+							<p><a class="a_video_left" href="">拜佛怎么拜？Pat The Roc手把手教你</a></p>
+							<p><a class="a_video_left" href="">老帅：夺冠没那么激动 担心三个月没打王者荣耀</a></p>
+							<p><a class="a_video_left" href="">脚踝收集器！国外五年级小孩赛场无人能挡</a></p>
+							<p><a class="a_video_left" href="">这件事并不简单！巨乳女友打篮球根本防不住</a></p>
+							<p><a class="a_video_left" href="">国外熊孩子系列！踩车扣篮结果还没进</a></p>
+							<p><a class="a_video_left" href="">第16届建桥杯预选赛打响 现场女将同台竞技</a></p>
+							<p><a class="a_video_left" href="">专访亚运会电竞首金选手Alan：我们赢在团结</a></p>
+							<p><a class="a_video_left" href="">防空警报！ 这样的扣篮你给几分？</a></p>
+							<p><a class="a_video_left" href="">英超</a> | <a href="">西甲</a> | <a href="">意甲</a> | <a href="">德甲</a> | <a href="">欧冠</a> | <a href="">中超</a> | <a href="">亚冠</a></p>
+						</div>
+					</div>
+					<div class="pagelist_down">
+							<div class="p_news fl">
+								<span><a href="">高清美图</a></span>
+							</div>
+						</div>
+				</div>
+				
+			</div>
+			<!--main_right-->
+			<div class="main_right fl">
+				<div class="main_middle_tab" style="width: 0px;">
+					<ul>
+						<li onmouseover="maintabover(this,0);" class="tab_selected  fl" style="border-left: none;margin-left: -1px;">新闻</li>
+						<li onmouseover="maintabover(this,1);" class="fl"><a href="#">广东</a></li>
+						<span class="fr">2018.8.26</span>
+					</ul>
+				</div>
+				<div id="main_middle_tabselect" style="margin-top: 20px;">
+					<div class="main_middle_tabselectpic">
+						<div class="p_news">
+							<p><a class="" href="">习近平这样对全面依法治国作出最新部署</a></p>
+							<p><a class="" href="">新华社评论员：讲好中国故事 展现中国形象</a></p>
+							<p><a class="" href="">新华社评论员：领时代潮流 践大道之行</a></p>
+							<p><a class="" href="">一图读懂中国特色社会主义社会治理之路</a></p>
+							<p><a class="" href="">改革开放40年文化体制改革成就综述</a></p>
+							<p><a class="" href="">国产002型航母离开码头 即将进行第二次海试(图)</a></p>
+							<p><a class="" href="">蔡英文乘逃亡用装甲车勘灾惹众怒 无奈下车趟水(图)</a></p>
+							<p><a class="" href="">山东寿光受灾菜价暴涨 市民：现在吃菜不如吃肉划算</a></p>
+							<div style="height: 13px;"></div>
+							<p><a class="" href="">中韩游泳选手起冲突 没想到日本网友这么说</a></p>
+							<p><a class="" href="">曼德拉的蓝图毁了:南非强征土地穷人就有好日子？</a></p>
+							<p><a class="" href="">哈尔滨酒店19死火灾亲历者:被熏醒后叫醒老伴跳3楼</a></p>
+							<p><a class="" href="">滴滴在全国范围内下线顺风车业务 2名高管被免职</a></p>
+							<p><a class="" href="">顺风车命案的关键92分钟:滴滴客服为何如此低效？</a></p>
+							<p><a class="" href="">特朗普会否被弹劾？关键要看这两点</a></p>
+							<p><a class="" href="">灭门惨案凶手22年后漂泊成作家 一颗烟蒂找出真凶</a></p>
+							<p><a class="" href="">民企老板的泣血总结:做实业30年 终于看清3个真相</a></p>
+							<p><a class="a_video_left" href="">西伯利亚惊现4万年马驹化石：内脏皮毛均保存良好</a></p>
+							<p><a class="" href="">杭州鼎家长租公寓爆仓4000户租客受损 涉事平台回应</a></p>
+							<div style="height: 13px;"></div>
+							<p><a class="a_hot_sort" href="">财经</a><span class="span_sort_line"> | </span><a href="">租客租房莫名“被贷款” 有知名中介涉及其中</a></p>
+							<p><a class="" href="">367个城市租金增速：北京不算最疯狂 有城市增速超70%</a></p>
+							<p><a class="" href="">侠客岛：距空姐遇害案不过百日 滴滴血迹未干又添一命</a></p>
+							<p><a class="a_hot_sort" href="">股票</a><span class="span_sort_line"> | </span><a href="">顺丰期中考没摁住提速成本 中金等下调盈利预测</a></p>
+							<p><a class="" href="">一位北京客的十年居住账本</a> <a href=""> 裁员瘦身：地产商经历阵痛</a></p>
+							<p><a class="a_hot_sort" href="">科技</a><span class="span_sort_line"> | </span><a class="" href="">B站解封：各大应用商店相继重新上架</a></p>
+							<p><a class="" href="">五家外卖咖啡横向对比 点一杯咖啡多长时间送到？</a></p>
+							<p><a class="" href="">睡眠不足会降低社交意愿</a>  <a href="">让人感觉更孤独 视力差的猫</a></p>
+							<p><a class="a_hot_sort" href="">汽车</a><span class="span_sort_line"> | </span><a class="" href="">曝铃木与长安解除合作</a> <a href="">7月楼市影响购车消费</a></p>
+							<p><a class="a_hot_sort" href="">时尚</a><span class="span_sort_line"> | </span><a class="" href="">延禧攻略头饰太精彩</a> <a href="">陈意涵遮孕肚的工装裤</a></p>
+							<p><a class="a_hot_sort" href="">热点</a><span class="span_sort_line"> | </span><a class="" href="">真人秀明星戴表谁决定？</a> <a href="">男士内裤进化简史</a></p>
+							<p><a class="a_hot_sort" href="">关注</a><span class="span_sort_line"> | </span><a class="" href="">无滤镜秦岚还是白月光</a> <a href="">云南有处神秘仙境</a></p>
+							<p><a class="a_hot_sort" href="">必看</a><span class="span_sort_line"> | </span><a class="" href="">中国玩具商被罚</a> <a href="">希腊退出救助 复苏烦恼犹存</a></p>
+						</div>
+					</div>
+					<div class="main_middle_tabselectpic display_hidden">
+						<div class="p_news">
+							<p><a class="" href="">滴滴浙江顺风车被责令暂停 要求立即整改</a></p>
+							<p><a class="" href="">佛山大爷拉煤气罐马路上煮面致交通拥堵 已被拘留</a></p>
+							<p><a class="" href="">港珠澳大桥收费标准定了 左行还是右行且如何缴费？</a></p>
+							<p><a class="" href="">车主买奥迪车被绑3年保险 只因轻信4S店“统一规定”</a></p>
+							<p><a class="" href="">老公与女同学出去吃饭 老婆竟向女同学敲诈了74万</a></p>
+							<div style="height: 13px;"></div>
+							<p><a class="" href="">26岁孕妇无奈放弃已经7个月的胎儿 只因口腔溃疡</a></p>
+							<p><a class="" href="">寿光救灾落水失联辅警找到1人:确认殉职 年仅18岁</a></p>
+							<p><a class="" href="">20岁女孩坐顺风车遇害 案发前曾有女乘客投诉嫌犯</a></p>
+							<p><a class="" href="">只因让群主踢人出了群 农村妇女遭低俗照片恶搞报复</a></p>
+							<p><a class="" href="">中国游客一去不复返 泰国急了：相信十一会回来！</a></p>
+							<p><a class="" href="">女婴手臂一夜间变黑坏死生命垂危 原来是被它吃掉</a></p>
+							<p><a class="" href="">澳一项心理学研究显示：男性太“聪明”不利于找伴侣</a></p>
+							<p><a class="" href="">银行周末服务调查：四成效率有待提高 社区银行被吐槽</a></p>
+							<p><a class="" href="">深漂每月要交房租2800元+ 轮椅内竟藏了324部走私手机</a></p>
+							<p><a class="" href="">深圳</a><span> | </span><a class="" href="">DW手表可能来自这里</a> <a href="">3岁幼童横穿马路遭车碾压</a></p>
+							<p><a class="" href="">珠海</a><span class=""> | </span><a class="" href="">2020年开展送教上门</a> <a href="">拱北一男子猛撞老板保时捷</a></p>
+							<p><a class="" href="">东莞</a><span class=""> | </span><a class="" href="">7家医疗机构上黑榜</a> <a href="">商品房预售资金存监管账户</a></p>
+							<p><a class="" href="">看图</a><span class=""> | </span><a class="" href="">高铁香港西九龙站建设进入收尾阶段</a></p>
+							<div style="height: 13px;"></div>
+							<p><a class="" href="">财经</a><span class=""> | </span><a href="">广州上榜全球宜居城市百强</a> <a href="">司法拍卖获广州车牌</a></p>
+							<p><a class="" href="">惊艳味蕾的鲜花水果宴</a> <a href="">广州最久远的云南菜餐厅</a></p>
+							<p><a class="" href="">秋风起吃无水桑拿火锅</a> <a href="">广州知名的小龙虾鼻祖店</a></p>
+							<p><a class="" href="">股票</a><span class=""> | </span><a href="">到阳山神峰关度假区避暑</a> <a href="">感受酒饮微醺广州之夜</a></p>
+							<p><a class="" href=""></a> <a href="">感受韩国釜山冬日浪漫</a> <a href="">感受舌尖上的陕州地坑院</a></p>
+							<p><a class="" href="">导购</a><span class=""> | </span><a class="" href="">奥迪A4L最高优惠8.55万元 众泰Z700优惠3000</a></p>
+							<p><a class="" href="">邀你换个姿势看海南</a> <a href="">来自红海湾的旅行度假攻略</a></p>
+							<p><a class="" href="">奥迪SQ2无伪谍照曝光</a> <a href="">夏朗畅享版8月31日上市</a>  <a href=""></a></p>
+							<p><a class="" href="">谷歌无人驾驶或已在沪成立独资公司</a> <a href=""></a></p>
+							<p><a class="" href="">美少女队长关晓彤助梦少年球员</a> <a href=""></a></p>
+							<p><a class="" href="">刘诗诗最新街拍可盐可甜</a> <a href=""></a></p>
+							<p><a class="" href="">看图</a><span class=""> | </span><a class="" href="">李宇春复古蕾丝衬衫看秀 法式优雅融合街头潮流</a> <a href=""></a></p>
+							<p><a class="" href="">袁咏仪李心洁杨采妮等齐亮相 出席慈善晚宴献爱心</a> <a href=""></a></p>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both;height: 21px;"></div>
+				<div class="main_middle_tab">
+					<ul>
+						<li onmouseover="maintabover(this,0);" class="tab_selected  fl" style="border-left: none;margin-left: -1px;"><a href="#">汽车</a></li>
+						<li onmouseover="maintabover(this,1);" class="fl"><a href="#">购车</a></li>
+						<li onmouseover="maintabover(this,2);" class="fl"><a href="#">高清实拍</a></li>
+					</ul>
+				</div>
+				<div id="main_middle_tabselect" style="margin-top: 0px;height: 436px;">
+					<div class="recommendtitle">
+						<div style="clear: both;height: 8px;"></div>
+						<ul>
+							<li class="fl"><a href="">购车指南</a></li>
+							<li class="fl"><a href="">新车</a></li>
+							<li class="fl"><a href="">导购</a></li>
+							<li class="fl"><a href="">车型</a></li>
+							<li class="fl"><a href="">试车</a></li>
+							<li class="fl"><a href="">新闻</a></li>
+							<li class="fl"><a href="">技术解析</a></li>
+							<li class="fl"><a href="">车致</a></li>
+							<li class="fl"><a href="">购车二选一</a></li>
+						</ul>
+						<div style="clear: both;height: 10px;"></div>
+					</div>
+					<div class="main_middle_tabselectpic">
+						<div class="img_news fl">
+							<a class="fl" href="#">
+								<img class="fl" src="img/tabselectcarpic1_1.jpg"/>
+								<span>实拍凯迪拉克XT4</span>
+							</a>
+						</div>
+						<div class="p_news fl" style="margin-top: -5px;margin-left: 16px;">
+							<p><a class="" href="">快来pick-谁是成都车展人气车王</a></p>
+							<p><a class="" href="">低于25万?雷克萨斯UX定价成关键</a></p>
+							<p><a class="" href="">说到你心里!15-20万日系SUV汇总</a></p>
+							<p><a class="" href="">也是MQB平台？大众新车比途昂大</a></p>
+						</div>
+						<div style="height: 10px;clear: both;"></div>
+						<div class="img_news fl">
+							<a class="fl" href="#">
+								<img class="fl" src="img/tabselectcarpic1_2.jpg"/>
+								<span>奥迪电动超跑首发</span>
+							</a>
+						</div>
+						<div class="p_news fl" style="margin-top: -5px;margin-left: 16px;">
+							<p><a class="" href="">轿跑版柯迪亚克实车曝光年内上市</a></p>
+							<p><a class="" href="">撩妹新神器!全新一代宝马Z4发布</a></p>
+							<p><a class="" href="">井口动力欧蓝德将停售14万就能买</a></p>
+							<p><a class="" href="">12万买紧凑家轿这几款好开又省油</a></p>
+						</div>
+						<div class="p_news fl" style="margin-top: 0px;">
+							<p><a class="" href="">新浪e站: 威马回应EX5自然事件</a> <a href="">大众或推出电动车共享</a></p>
+							<p><a class="" href="">凯迪拉克XT4核心配置公布</a> <a href="">奥迪全新A6L或将于31日亮相</a></p>
+							<p><a class="" href="">奥迪全新Q2L将31日亮相预售</a> <a href="">丰田2款插混新车明年上市</a></p>
+							<p><a class="" href="">捷豹国产SUV到店动力尺寸占优 </a> <a href="">9张图认全车内按键功能</a></p>
+							<p><a class="" href="">凯迪拉克新旗舰轿车2.0T可闭缸</a> <a href="">奔驰新电动车造型科幻</a></p>
+						</div>
+						<div class="find_dropdown fl">
+							<span class="fl">找车</span>
+							<div class="dp_div fl">
+								<p class="dropdown_title" onclick="selectques(this)">找品牌</p>
+								<div class="dropdown_carlist display_hidden">
+									<ul>
+										<li onclick="chgtype(this);">找品牌</li>
+										<li class="dropgoups">A</li>
+										<li class="dropcontent"  onclick="chgtype(this);">阿尔法-罗密欧</li>
+										<li class="dropcontent"  onclick="chgtype(this);">阿斯顿·马丁</li>
+										<li class="dropcontent"  onclick="chgtype(this);">奥迪</li>
+										<li class="dropcontent"  onclick="chgtype(this);">爱驰</li>
+										<li class="dropgoups">B</li>
+										<li class="dropcontent" onclick="chgtype(this);">巴博斯</li>
+										<li class="dropcontent" onclick="chgtype(this);">宝马</li>
+										<li class="dropcontent" onclick="chgtype(this);">保时捷</li>
+										<li class="dropcontent" onclick="chgtype(this);">奔驰</li>
+									</ul>
+								</div>
+							</div>
+							<div class="dp_div fl">
+								<p class="dropdown_title" onclick="selectques(this)">找车型</p>
+								<div class="dropdown_carlist display_hidden">
+									<ul>
+										<li onclick="chgtype(this);">找车型</li>
+										<li class="dropgoups">A</li>
+										<li class="dropcontent"  onclick="chgtype(this);">阿尔法-罗密欧</li>
+										<li class="dropcontent"  onclick="chgtype(this);">阿斯顿·马丁</li>
+										<li class="dropcontent"  onclick="chgtype(this);">奥迪</li>
+										<li class="dropcontent"  onclick="chgtype(this);">爱驰</li>
+										<li class="dropgoups">B</li>
+										<li class="dropcontent" onclick="chgtype(this);">巴博斯</li>
+										<li class="dropcontent" onclick="chgtype(this);">宝马</li>
+										<li class="dropcontent" onclick="chgtype(this);">保时捷</li>
+										<li class="dropcontent" onclick="chgtype(this);">奔驰</li>
+									</ul>
+								</div>
+							</div>
+							<input class="fr" type="button" name="" id="" value="询价" />
+						</div>
+					</div>
+					<div class="main_middle_tabselectpic display_hidden">
+						<div class="img_news fl">
+							<a class="fl" href="#">
+								<img class="fl" src="img/tabselectcarpic2_1.jpg"/>
+								<span>大指挥官5座版</span>
+							</a>
+						</div>
+						<div class="p_news fl" style="margin-top: -5px;margin-left: 16px;">
+							<p><a class="" href="">实拍凯迪拉克全新XT4:双车身设计</a></p>
+							<p><a class="" href="">高颜值的新物种 试驾宝马全新X2</a></p>
+							<p><a class="" href="">"幼豹"初亮爪 试奇瑞捷豹E-PACE</a></p>
+							<p><a class="" href="">本田十代雅阁长测(一)爱之初体验</a></p>
+						</div>
+						<div style="height: 10px;clear: both;"></div>
+						<div class="p_news fl" style="margin-top: -5px;">
+							<p><a class="" href="">难题?新朗逸/宝来如何选 试WEY VV6:多项科技配置加身</a></p>
+							<p><a class="" href="">全新X3购车手册-低配就够用 品质不输速腾它为何热度低</a></p>
+							<p><a class="" href="">新浪e站:试驾长安新CS75插混版 宝马将推全新X3插混版</a></p>
+							<p><a class="" href="">购车指南：比亚迪e5 起亚智跑 斯柯达柯米克 宝骏530</a></p>
+							<p><a class="" href="">新车上市：捷途X70 奔驰G级 沃尔沃XC40 长安全新悦翔</a></p>
+						</div>
+						<div class="p_news fl" style="margin-top: 0px;">
+							<p><a class="" href="">新浪e站:威马回应EX5自然事件</a> <a href="">大众或推出电动车共享</a></p>
+							<p><a class="" href="">凯迪拉克XT4核心配置公布</a> <a href="">奥迪全新A6L或将于31日亮相</a></p>
+							<p><a class="" href="">奥迪全新Q2L将31日亮相预售</a> <a href="">丰田2款插混新车明年上市</a></p>
+							<p><a class="" href="">捷豹国产SUV到店动力尺寸占优 </a> <a href="">9张图认全车内按键功能</a></p>
+						</div>
+						<div class="find_dropdown fl">
+							<span class="fl">找车</span>
+							<div class="dp_div fl">
+								<p class="dropdown_title" onclick="selectques(this)">找品牌</p>
+								<div class="dropdown_carlist display_hidden">
+									<ul>
+										<li onclick="chgtype(this);">找品牌</li>
+										<li class="dropgoups">A</li>
+										<li class="dropcontent"  onclick="chgtype(this);">阿尔法-罗密欧</li>
+										<li class="dropcontent"  onclick="chgtype(this);">阿斯顿·马丁</li>
+										<li class="dropcontent"  onclick="chgtype(this);">奥迪</li>
+										<li class="dropcontent"  onclick="chgtype(this);">爱驰</li>
+										<li class="dropgoups">B</li>
+										<li class="dropcontent" onclick="chgtype(this);">巴博斯</li>
+										<li class="dropcontent" onclick="chgtype(this);">宝马</li>
+										<li class="dropcontent" onclick="chgtype(this);">保时捷</li>
+										<li class="dropcontent" onclick="chgtype(this);">奔驰</li>
+									</ul>
+								</div>
+							</div>
+							<div class="dp_div fl">
+								<p class="dropdown_title" onclick="selectques(this)">找车型</p>
+								<div class="dropdown_carlist display_hidden">
+									<ul>
+										<li onclick="chgtype(this);">找车型</li>
+										<li class="dropgoups">A</li>
+										<li class="dropcontent"  onclick="chgtype(this);">阿尔法-罗密欧</li>
+										<li class="dropcontent"  onclick="chgtype(this);">阿斯顿·马丁</li>
+										<li class="dropcontent"  onclick="chgtype(this);">奥迪</li>
+										<li class="dropcontent"  onclick="chgtype(this);">爱驰</li>
+										<li class="dropgoups">B</li>
+										<li class="dropcontent" onclick="chgtype(this);">巴博斯</li>
+										<li class="dropcontent" onclick="chgtype(this);">宝马</li>
+										<li class="dropcontent" onclick="chgtype(this);">保时捷</li>
+										<li class="dropcontent" onclick="chgtype(this);">奔驰</li>
+									</ul>
+								</div>
+							</div>
+							<input class="fr" type="button" name="" id="" value="询价" />
+						</div>
+					</div>
+					<div class="main_middle_tabselectpic display_hidden">
+						<div class="car_shipai">
+							<ul>
+								<li class="fl">
+									<a href="#" class="fl">
+										<img class="fl" src="img/tabselectcarpic3_1.jpg"/>
+										<span class="fl">一汽大众首款SUV 探歌</span>
+									</a>
+								</li>
+								<li class="fl">
+									<a href="#"  class="fl">
+										<img class="fl" src="img/tabselectcarpic3_2.jpg"/>
+										<span class="fl">天籁2.0L XL智进版 配置提升</span>
+									</a>
+								</li>
+								<li class="fl">
+									<a href="#" class="fl">
+										<img class="fl" src="img/tabselectcarpic3_3.jpg"/>
+										<span class="fl">WEY首款四驱燃油SUV VV6</span>
+									</a>
+								</li>
+								<li class="fl">
+									<a href="#"  class="fl">
+										<img class="fl" src="img/tabselectcarpic3_4.jpg"/>
+										<span class="fl">蔚来ES8 智能电动7座SUV</span>
+									</a>
+								</li>
+								<li class="fl">
+									<a href="#" class="fl">
+										<img class="fl" src="img/tabselectcarpic3_5.jpg"/>
+										<span class="fl">汽车+游戏 君威GS穿越火线版</span>
+									</a>
+								</li>
+								<li class="fl">
+									<a href="#"  class="fl">
+										<img class="fl" src="img/tabselectcarpic3_6.jpg"/>
+										<span class="fl">宝骏新款E100 配置提升</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!--广告条-->
+		<div class="ad_bar">
+			<a href=""><img src="img/ad_bar.jpg"/></a>
+		</div>
+		<!--footer底部导航条-->
+		<div style="clear: both;height: 20px;"></div>
+		<div class="footer">
+			<div class="footer_bar">
+				<ul>
+					<li class="fl"><a href="">新浪简介 </a></li>
+					<li class="fl" >┊</li>
+					<li class="fl"><a href="">About Sina</a></li>
+					<li class="fl" >┊</li>
+					<li class="fl"><a href="">广告服务</a></li>
+					<li class="fl" >┊</li>
+					<li class="fl"><a href="">联系我们</a></li>
+					<li class="fl" >┊</li>
+					<li class="fl"><a href="">诚聘英才</a></li>
+					<li class="fl" >┊</li>
+					<li class="fl"><a href="">网站律师</a></li>
+					<li class="fl" >┊</li>
+					<li class="fl"><a href="">SINA English</a></li>
+					<li class="fl" >┊</li>
+					<li class="fl"><a href="">注册</a></li>
+					<li class="fl" >┊</li>
+					<li class="fl"><a href="">产品答疑</a></li>
+				</ul>
+			</div>
+			<p style="margin: 15px 0px;">Copyright ©1996-2018 SINA Corporation, All Rights Reserved</p>
+			<div class="tip_img">
+				<ul>
+					<li class="fl"><a href=""><img src="img/footer_logo01.gif"/></a></li>
+					<li class="fl"><a href=""><img src="img/footer_logo02.gif"/></a></li>
+					<li class="fl"><a href=""><img src="img/footer_logo03.png"/></a></li>
+					<li class="fl"><a href=""><img src="img/footer_logo04.gif"/></a></li>
+					<li class="fl"><a href=""><img src="img/footer_logo05.gif"/></a></li>
+					<li class="fl"><a href=""><img src="img/footer_logo06.gif"/></a></li>
+					<li class="fl"><a href=""><img src="img/footer_logo07.gif"/></a></li>
+					<li class="fl"><a href=""><img src="img/footer_logo08.gif"/></a></li>
+					<li class="fl"><a href=""><img src="img/footer_logo09.gif"/></a></li>
+				</ul>
+			</div>
+			<div style="clear: both;"></div>
+			<p style="margin: 15px 0px;">隐私保护　新浪公司　版权所有　京ICP证000007<br>
+			客户服务热线：4006900000　违法和不良信息举报电话：010-62675637　举报邮箱：jubao@vip.sina.com</p>
+			<div style="clear: both;height: 15px;"></div>
+			<div class="bottom_info">
+				<p><a href="">京网文【2017】10231-1151号</a>　<a href="">互联网新闻信息服务许可</a></p>
+				<p><a href="">国家药监局（京）-经营性-2014-0004</a>　<a href="">京教研[2002]7号</a>　<a href="">电信业务审批[2001]字第379号</a></p>
+				<p><a href="">增值电信业务经营许可证B2-20090108</a>　<a href="">电信与信息服务业务经营许可证000007号</a></p>
+				<p><a href="">广播电视节目制作经营许可证（京）字第828号</a> <a href="">甲测资字1100078</a> <a href="">京公网安备11000002000016号</a></p>
+			</div>
+			
+		</div>
+	</body>
+</html>
