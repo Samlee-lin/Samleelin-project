@@ -1,0 +1,363 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}/*清空样式*/
+body{
+	width: 100%;
+	background: #fcfcfc;
+	font-size: 12px;
+}
+ul,li{
+	list-style: none;
+}/*清空列表样式*/
+a{
+	text-decoration: none;
+}
+.fl{
+	float: left;
+}/*左浮动*/
+.fr{
+	float: right;
+}/*右浮动*/
+.display_hidden{
+	display: none;
+}
+.display_block{
+	display: block;
+}
+/*-----------------------------登录界面--------------------------------*/
+/*--------顶部header_Lg(登录注册相同)-------- */
+.header_LR{
+	height: 100px;
+	width: 100%;
+	background: #ffffff;
+	border: 1px solid #e1e1e1;
+	box-shadow: 2px 2px 0 rgba(0,0,0,.1);
+}
+.header_LR_left{
+	margin-top: 15px;
+	margin-left: 80px;
+}
+.header_LR_right{
+	font-size: 12px;
+	margin-top: 30px;
+	margin-right: 90px;
+	line-height: 25px;
+}
+.header_LR_right span{
+	color: #999;
+}
+.header_LR_right span a:link,.header_LR_right span a:visited{
+	color: #06c;
+}
+.header_LR_right span a:hover{
+	color: #e60012;
+}
+.drop_help{
+	position: relative;
+	background: #FFFFFF;
+	margin-left: 25px;
+}
+.drop_help a:link,.drop_help a:visited{
+	color: #222222;
+}
+.drop_help a:hover{
+	color: #e60012;
+}
+.drop_help p{
+	width: 100px;
+	text-align: center;
+	border: 1px solid #FFFFFF;
+	border-bottom: none;
+	height: 25px;
+	line-height: 25px;
+	text-align: right;
+	background: url(../img/runbun.png) no-repeat 5px 5px;
+}
+.drop_help_hover{
+	border: 1px solid #CCCCCC !important;
+	border-bottom: none !important;
+}
+.drop_help p a{
+	width: 80px;
+	height: 25px;
+	padding-right: 26px;
+	background: url(../img/turnb.png) no-repeat 52px 1px;
+}
+.drop_help ul{
+	position: absolute;
+	width: 100px;
+	text-align: center;
+	border: 1px solid #cccccc;
+	border-top: none;
+	line-height: 25px;
+}
+.drop_help ul li{
+	height: 25px;
+	border-top: 1px dashed #cccccc;
+	background: #FFFFFF;
+}
+
+/*--------main_Lg-------- */
+.main_Lg{
+	width: 980px;
+	/*height: 480px;*/
+	margin: 0px auto;
+	margin-top: 30px;
+}
+.main_Lg>img{
+	margin-top: 50px;
+}
+.loginBox{
+	background: #FFFFFF;
+	width: 400px;
+	position: relative;
+}
+.loginBox_content{
+	width: 330px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.loginBox_content_h1{
+	height: 20px;
+	line-height: 20px;
+}
+.loginBox_content_h1 p{
+	font-size: 14px;
+	font-weight: bold;
+}
+.loginBox_content_h1 p+a:link,.loginBox_content_h1 p+a:visited{
+	color:#06c
+}
+.loginBox_content_h1 p+a:hover{
+	color: #E60012;
+}
+.loginBox_content_h2 input{
+	width: 262px;
+	height: 52px;
+	margin-top: 10px;
+	color: #757575;
+	padding-left: 66px;
+	border-width: 1px;
+}
+.loginBox_content_h2 input:first-child{
+	background: url(../img/userHead.png) no-repeat 20px 15px;
+}
+.loginBox_content_h2 input:last-child{
+	background: url(../img/lock.png) no-repeat 20px 10px;
+}
+.loginBox_content_h3{
+	line-height: 45px;
+	color: #999999;
+}
+.loginBox_content_h3 input{
+	vertical-align: text-bottom;
+}
+.loginBox_content_h3 span{
+	margin-left: 5px;
+	height: 12px;
+}
+.loginBox_content_h3 font{
+	color: red;
+	padding-left: 10px;
+	display: none;
+}
+.loginBox_content_h3 a:link,.loginBox_content_h3 a:visited{
+	color: #999999;
+}
+.loginBox_content_h3 a:hover{
+	color: #FF4E00;
+}
+.login_btn{
+	width: 330px;
+	height: 52px;
+	text-align: center;
+	display: block;
+	background: #ff3c3c;
+	line-height: 50px;
+	font-size: 16px;
+	color: #FFFFFF;
+	border-radius: 3px;
+	border-width: 0;
+	cursor: pointer;
+}
+.login_btn+p{
+	margin: 15px 0px;
+	color: #666666;
+}
+.loginBox_content_more{
+	height: 26px;
+	line-height: 26px;
+}
+.loginBox_content_more a{
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+	margin-right: 20px;
+}
+.loginBox_content_more .span_qq{
+	background: url(../img/l_1.png) no-repeat;
+}
+.loginBox_content_more .span_weibo{
+	background: url(../img/l_2.png) no-repeat;
+}
+.loginBox_content_more .span_ali{
+	background: url(../img/l_3.png) no-repeat;
+}
+.loginBox_content_more .span_wechat{
+	background: url(../img/l_4.png) no-repeat;
+}
+.loginBox_content_more .span_qq:hover{
+	background: url(../img/l_1_h.png) no-repeat;
+}
+.loginBox_content_more .span_weibo:hover{
+	background: url(../img/l_2_h.png) no-repeat;
+}
+.loginBox_content_more .span_ali:hover{
+	background: url(../img/l_3_h.png) no-repeat;
+}
+.loginBox_content_more .span_wechat:hover{
+	background: url(../img/l_4_h.png) no-repeat;
+}
+.loginBox_content_more p{
+	padding-right: 18px;
+	background: url(../img/turnb.png) no-repeat 75px;
+	cursor: pointer;
+}
+.loginBox_content_more_web{
+	margin-top: 20px;
+}
+.loginBox_content_more_web a{
+	padding-left: 20px;
+	width: 55px;
+	height: 25px;
+	display: inline-block;
+	color: #333333;
+}
+.loginBox_content_more_web a:nth-of-type(1){
+	background: url(../img/tbao.png) no-repeat;
+}
+.loginBox_content_more_web a:nth-of-type(2){
+	background: url(../img/jd.png) no-repeat;
+}
+.loginBox_content_more_web a:nth-of-type(3){
+	background: url(../img/wangyi.png) no-repeat;
+}
+.loginBox_content_more_web a:nth-of-type(4){
+	background: url(../img/baidu.png) no-repeat;
+}
+.loginBox_content_more_web a:nth-of-type(5){
+	background: url(../img/mogu.png) no-repeat;
+}
+.loginBox_content_more_web a:nth-of-type(6){
+	background: url(../img/renren.png) no-repeat;
+}
+/*--------footer-------- */
+.footer{
+	width: 100%;
+	text-align: center;
+	line-height: 25px;
+	margin-top: 10px;
+}
+.footer a:link,.footer a:visited{
+	color: #333333;
+}
+.footer a:hover{
+	color: #c00;
+}
+
+/*-----------------------------注册界面--------------------------------*/
+.main_Rg{
+	width: 100%;
+	border-bottom: 1px solid #f4f4f4;
+	
+}
+.registerBox{
+	width: 330px;
+	margin: 35px auto 40px auto;
+}
+.registerBox h2{
+	text-align: center;
+	font-size: 26px;
+	color: #333333;
+	font-weight: bold;
+	line-height: 50px;
+}
+.registerBox ul li{
+	margin-bottom: 10px;
+	position: relative;
+}
+.registerBox ul li input:not(.submit){
+	padding-left: 20px;
+}
+.registerBox ul li input:not(.checknum){
+	width: 310px;
+	height: 50px;
+	border-radius: 3px;
+	border: 1px solid #dedede;
+}
+.registerBox ul li input[type= "submit"]{
+	background: #d72226;
+	color: #ffffff;
+	font-size: 14px;
+}
+.checknum{
+	width: 170px;
+	height: 50px;
+	border-radius: 3px;
+	border: 1px solid #dedede;
+}
+.submit{
+	width: 330px !important;
+}
+.checknum+a{
+	padding: 15px 28px;
+	background: #57565f;
+	font-size: 14px;
+	color: #ffffff;
+	margin-left: 10px;
+	border-radius: 3px;
+}
+.registerBox ul li{
+	position: relative;
+}
+.registerBox ul li:first-child{
+	text-align: center;
+}
+.registerBox ul li p a:link,.registerBox ul li p a:visited{
+	color: #0066cc;
+}
+.registerBox ul li span{
+	/*position: absolute;
+	top: 18px;
+	left: -60px;*/
+}
+.input_lable{
+	position: absolute;
+	left: 20px;
+	top: 18px;
+	height: 50px;
+}
+.tip{
+	width: 160px;
+	height: 52px;
+	background: url(../img/info_1.png) no-repeat;
+	position: absolute;
+	left: 350px;
+	top: 0px;
+	padding:0px 10px;	
+	/*line-height: 25px;*/
+}
+.tip p,.tip_false p{
+	padding: 10px 5px;
+	text-align: center;
+}
+.tip_false{
+	width: 180px;
+	height: 52px;
+	background: url(../img/info_2.png) no-repeat;
+	position: absolute;
+	left: 350px;
+	top: 0px;
+}

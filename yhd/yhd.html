@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>一号店</title>
+		<link rel="stylesheet" type="text/css" href="css/yhd.css"/>
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/yhd.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body style="background: #f8f8f8;">
+		<!--顶部header-->
+		<div class="header">
+			<div class="header_main">
+				<div class="header_main_left fl">
+					<a>送货地址：上海</a>
+					<!--下拉选择收获地址-->
+					<div class="drop_selectcity display_hidden">						
+						<ul>
+							<li>
+								<p class="fl">搜索城市：</p>
+								<input class="fl" type="text" name="" id="" value="" placeholder="请输入城市"/>
+								<span class="fr"></span>
+							</li>
+							<li>
+								<p class="fl">热门城市：</p>
+								<div class="fl">
+									<a href="">上海市</a>
+									<a href="">北京市</a>
+									<a href="">广州市</a>
+									<a href="">深圳市</a>
+									<a href="">南京市</a>
+									<a href="">杭州市</a>
+									<a href="">武汉市</a>
+									<a href="">成都市</a>
+									<a href="">重庆市</a>
+									<a href="">苏州市</a>
+									<a href="">天津市</a>
+									<a href="">合肥市</a>
+									<a href="">温州市</a>
+									<a href="">无锡市</a>
+									<a href="">宁波市</a>
+									<a href="">常州市</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header_main_right fr">
+					<ul>
+						<li class="fl">你好，请<a href="login.html">登录</a><a href="register.html">免费注册</a></li>
+						<div class="fl">|</div>
+						<li class="fl"><a href="#">我的订单</a></li>
+						<div class="fl">|</div>
+						<li class="fl"><a href="#">收藏夹</a></li>
+						<li class="fl">
+							<a href="#">客户服务<i></i></a>
+							<ul class="display_hidden">
+								<li><a href="">包裹跟踪</a></li>
+								<li><a href="">在线退换货</a></li>
+							</ul>
+						</li>
+						<li class="fl"><a href="#">网站导航</a></li>
+						<div class="fl">|</div>
+						<li class="fl"><a href="#">关注我们:</a><a class="weibo_a" href="#"><img src="img/sh1.png"/></a><a class="wechat_a" href="#"><img src="img/sh2.png"/></a></li>
+						<div class="fl">|</div>
+						<li class="fl"><a href="#">手机版</a></li>
+					</ul>
+				</div>
+			</div>		
+		</div>				
+		<!--主要部分main-->
+		<div class="main">
+			<div class="main_head">
+				<div class="main_head_l fl">
+					<a href="index.html"><img src="img/logo_car.jpg"/></a>
+				</div>
+				<div class="main_head_patch fl">
+					<span class="fl">配送至:</span>
+					<div class="area_head fl">
+						<span>上海</span>
+						<span>静安区</span>
+						<span>城区</span>
+					</div>
+					<div class="select_drop display_hidden">
+						<div class="select_drop_head">
+							<ul>
+								<li class="select_drop_head_li_select fl">上海</li>
+								<li class="fl">静安区</li>
+								<li class="fl">城区</li>
+								<span class="fr close_span"></span>
+							</ul>
+						</div>
+						<div class="select_drop_down ">
+							<ul>
+								<li><p class="fl">华北：</p> <a>北京</a> <a>天津</a> <a>河北</a> <a>山西</a> <a>内蒙古</a> </li>
+								<li><p class="fl">华东：</p> <a>上海</a> <a>江苏</a> <a>浙江</a> <a>安徽</a> <a>福建</a> <a>山东</a> </li>
+								<li><p class="fl">华南：</p> <a>广东</a> <a>广西</a> <a>海南</a> </li>
+								<li><p class="fl">华中：</p> <a>江西</a> <a>河南</a> <a>湖北</a> <a>湖南</a> </li>
+								<li><p class="fl">西南：</p> <a>重庆</a> <a>四川</a> <a>贵州</a> <a>云南</a> <a>西藏</a> </li>
+								<li><p class="fl">西北：</p> <a>陕西</a> <a>甘肃</a> <a>青海</a> <a>宁夏</a> <a>新疆</a> </li>
+								<li><p class="fl">东北：</p> <a>辽宁</a> <a>吉林</a> <a>黑龙江</a> </li>
+							</ul>
+						</div>
+						<div class="select_drop_down display_hidden">
+							<ul>
+								<li> <a>静安区</a> <a>闸北区</a> <a>虹口区</a> <a>杨浦区</a> <a>宝山区</a> </li>
+								<li> <a>闵行区</a> <a>嘉定区</a> <a>浦东新区</a> <a>青浦区</a> <a>松江区</a> </li>
+								<li> <a>奉贤区</a> <a>普陀区</a> <a>黄浦区</a> <a>金山区</a> <a>长宁区</a> </li>
+								<li> <a>崇明区</a> <a>徐汇区</a> </li>
+							</ul>
+						</div>
+						<div class="select_drop_down display_hidden">
+							<ul>
+								<li> <a>城区</a></li>
+								<!--<li> <a>上海</a> <a>江苏</a> <a>浙江</a> <a>安徽</a> <a>福建</a> <a>山东</a> </li>
+								<li> <a>广东</a> <a>广西</a> <a>海南</a> </li>
+								<li> <a>江西</a> <a>河南</a> <a>湖北</a> <a>湖南</a> </li>
+								<li> <a>重庆</a> <a>四川</a> <a>贵州</a> <a>云南</a> <a>西藏</a> </li>
+								<li> <a>陕西</a> <a>甘肃</a> <a>青海</a> <a>宁夏</a> <a>新疆</a> </li>
+								<li> <a>辽宁</a> <a>吉林</a> <a>黑龙江</a> </li>-->
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="main_head_search fr">
+					<input type="" name="" id="" value="" placeholder="请输入关键词"/>
+				</div>
+			</div>
+			<!--购物车-->
+			<div class="mian_car">
+				<div class="main_car_head">
+					<p class="fl">商品信息</p>
+					<p class="fl">商品单价</p>
+					<p class="fl">商品数量</p>
+					<p class="fl">小计（￥）</p>
+					<p class="fr">操作</p>
+				</div>
+				<div class="main_car_list">
+					<ul>
+						<li>
+							<div class="main_car_list_head">
+								<a>珠韵首饰旗舰店</a><a href=""><span class="server_logo"></span></a>
+							</div>
+							<div class="main_car_list_detail">
+								<div class="main_car_list_detail_info" fl>
+									<img class="fl" src="img/shopcar1.jpg"/>
+									<div class="main_car_list_detail_info_chag fl">
+										<p><a href="">珠韵首饰 淡水珍珠项链近圆白色女款 圆润光泽强 送妈妈礼物 妃暄款 白色 8.5-9.5mm/45cm</a></p>
+										<p>白色 8.5-9.5mm</p>
+									</div>
+									
+								</div>
+								<div class="price_one fl">
+									<p>379.00</p>
+								</div>
+								<div class="car_addminus fl">
+									<button class="input_reject">-</button>
+									<input type="text" name="" id="" value="1" />
+									<button>+</button>
+								</div>
+								<div class="price_all fl">
+									<p>379.00</p>
+								</div>
+								<div class="car_control fr">
+									<span class=""></span>
+									<span></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="main_car_list_head">
+								<a>一号店自营</a><a href=""><span class="server_logo"></span></a>
+							</div>
+							<div class="main_car_list_detail">
+								<div class="main_car_list_detail_info" fl>
+									<img class="fl" src="img/shopcar2.jpg"/>
+									<div class="main_car_list_detail_info_chag fl">
+										<p><a href="">亨氏 (Heinz) 乐维滋果汁泥 宝宝零食婴儿辅食苹果草莓水果泥(1-3岁适用) 120g</a></p>
+										<p>草莓山楂枸杞</p>
+									</div>
+									
+								</div>
+								<div class="price_one fl">
+									<p>5.8</p>
+								</div>
+								<div class="car_addminus fl">
+									<button class="input_reject">-</button>
+									<input type="text" name="" id="" value="1" />
+									<button>+</button>
+								</div>
+								<div class="price_all fl">
+									<p>5.8</p>
+								</div>
+								<div class="car_control fr">
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="main_car_count">
+					<div class="main_car_count_btn fr">
+						<a href="#">结算</a>
+					</div>
+					<div class="main_car_count_price fr">
+						<p>商品总价：<span>384.80</span></p>
+					</div>
+					<div class="main_car_count_num fr">
+						<p>商品数量：<span>2</span></p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!--底部item-->
+		<div style="clear: both;"></div>
+		<div class="bottomitem">
+			<ul>
+				<li class="fl">
+					<img src="img/b1.png"/>
+					<p>正品保障</p>
+					<p>正品行货 放心购买</p>
+				</li>
+				<li class="fl">
+					<img src="img/b2.png"/>
+					<p>满38包邮</p>
+					<p>满38包邮 免运费</p>
+				</li>
+				<li class="fl">
+					<img src="img/b3.png"/>
+					<p>天天低价</p>
+					<p>天天低价 畅选无忧</p>
+				</li>
+				<li class="fl">
+					<img src="img/b4.png"/>
+					<p>准时送达</p>
+					<p>收货时间由你做主</p>
+				</li>
+			</ul>
+			<div style="clear: both;"></div>
+			<div class="bottomitem_detail">
+				<ul class="fl">
+					<li>新手上路</li>
+					<li><a href="">售后流程</a></li>
+					<li><a href="">购物流程</a></li>
+					<li><a href="">订购方式</a></li>
+					<li><a href="">隐私声明</a></li>
+					<li><a href="">推荐分享说明</a></li>
+				</ul>
+				<ul class="fl">
+					<li>配送与支付</li>
+					<li><a href="">货到付款区域</a></li>
+					<li><a href="">配送支付查询</a></li>
+				</ul>
+				<ul class="fl">
+					<li>会员中心</li>
+					<li><a href="">资金管理</a></li>
+					<li><a href="">我的收藏</a></li>
+					<li><a href="">我的订单</a></li>
+				</ul>
+				<ul class="fl">
+					<li>服务保证</li>
+					<li><a href="">退换货原则</a></li>
+					<li><a href="">售后服务保证</a></li>
+					<li><a href="">产品质量保证</a></li>
+				</ul>
+				<ul class="fl">
+					<li>联系我们</li>
+					<li><a href="">网站故障报告</a></li>
+					<li><a href="">购物咨询</a></li>
+					<li><a href="">投诉与建议</a></li>
+				</ul>
+				<div class="bottomitem_detail_scancode fl">
+					<img class="fl" src="img/er.gif"/>
+					<img src="img/ss.png"/>
+				</div>
+				<div class="bottomitem_detail_hotline fl">
+					<p><a href="#">新浪微博</a></p>
+					<p><a href="#">腾讯微博</a></p>
+					<p>服务热线:</p>
+					<p>400-123-4567</p>
+				</div>
+			</div>
+		</div>
+		<!--底部footer-->
+		<div style="clear: both;"></div>
+		<div class="footer">
+			<p>沪ICP备16050468号 | 沪B2-20170039 | 沪公网安备 31010502002939号 | 友情链接 | 出版物经营许可证Copyright© 1号店网上超市 2007-2017，All Rights Reserved</p>
+			<ul class="">
+				<li class="fl"><a href=""><img src="img/b_1.gif"/></a></li>
+				<li class="fl"><a href=""><img src="img/b_2.gif"/></a></li>
+				<li class="fl"><a href=""><img src="img/b_3.gif"/></a></li>
+				<li class="fl"><a href=""><img src="img/b_4.gif"/></a></li>
+				<li class="fl"><a href=""><img src="img/b_5.gif"/></a></li>
+				<li class="fl"><a href=""><img src="img/b_6.gif"/></a></li>
+			</ul>
+		</div>
+	</body>
+
+</html>
