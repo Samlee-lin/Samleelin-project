@@ -1,0 +1,117 @@
+/*注册界面css*/
+body{
+	color: #111111;
+}
+.display_hidden{
+	display: none
+}
+.display_block{
+	display: block;
+}
+.logo{
+	width: 100%;
+	height: 31px;
+}
+.logo span{
+	width: 103px;
+	height: 31px;
+	display: block;
+	background: url(../img/amazon-2.png) no-repeat;
+	background-position: -5px -130px;
+	background-size: 400px 750px;
+	margin: 10px auto;
+}
+.register_box{
+	width: 348px;
+	/*height: 517px;*/
+	border: 1px solid #DDDDDD;
+	margin: 10px auto;
+	border-radius: 4px;
+}
+.register_box_content{
+	padding: 0px 20px 10px 20px;
+}
+.register_box_content h2{
+	font-size: 28px;
+	margin-top: 10px;
+}
+.content-tip{
+	font-size: 12px;
+	line-height: 15px;
+	margin-top: 5px;
+}
+.tip{
+	width: 13px;
+	height: 14px;
+	background: url(../img/amazon-2.png) no-repeat;
+	display: inline-block;
+	background-position: -166px -130px;
+}
+.register_submit button{
+	width: 306px;
+}
+.privacyNotice{
+	font-size: 12px;
+	margin: 20px 0px 10px 0px;
+}
+a:visited,a:link{
+	color: #0066C0;
+}
+a:hover{
+	color: #c45500;
+	text-decoration: underline;
+}
+.toSign{
+	width: 312px;
+	height: 44px;
+	background: linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);
+	background-color: transparent;
+}
+.toSign p{
+	line-height: 61px;
+	font-size: 12px;
+}
+.toSign span{
+	color: #0066c0;
+	font-size: 8px;
+}
+.register_bottom{
+	height: 72px;
+	width: 100%;
+	margin-top: 10px;
+	padding-top: 10px;
+	font-size: 12px;
+	background: linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);
+	background-color: transparent;
+}
+.register_bottom p{
+	color: #555555;
+}
+.register_bottom p a{
+	padding-right: 10px;
+}
+
+
+/*登录界面css*/
+.help{
+	padding: 20px 0px;
+}
+/*.help a{
+	color: #0066C0;
+}
+.help a:hover{
+	color: #c45500;
+	text-decoration: underline;
+}*/
+.help_drop a{
+	padding-left: 15px;
+}
+.help_click{
+	cursor: pointer;
+}
+/*.help_click>span{
+	transition:transform 1s;
+}
+.help_click>span:active{
+	transform:rotate(90deg);
+}*/

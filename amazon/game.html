@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>game</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="bootstrap/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/game.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jqzoom.css"/>
+		<script src="js/jquery.jqzoom-min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.jqzoom').jqzoom({
+            zoomType: 'standard',
+            lens:true,
+            preloadImages: false,
+            alwaysOn:false,
+            title:false
+        });
+			})
+		</script>
+	</head>
+	<body style="min-width: 980px;">
+		<!--头部header-->
+		<div class="banner_ad">
+			<a href="#"><img src="img/header_topad.jpg"/></a>
+		</div>
+		<header>
+			<div class="container-fluid">
+				<!--header上部分-->
+				<div class="header_top row">
+					<!--header-top logo部分-->
+					<div class="header_top_logo pull-left">
+						<div class="header_top_logo_main">
+							<a class="logo_a_left" href="#">
+								<span class="logo_left"></span>
+								<span class="logo_right"></span>
+							</a>
+							<a class="logo_a_right" href="">
+								Try Prime
+							</a>
+							<div class="logo_a_right_hover display_hidden">
+								<span class="glyphicon glyphicon-triangle-left pull-left" style="color: #FFFFFF;"></span>
+								<div class="logo_a_right_hover_content pull-left">
+									<p class="text-warning" style="margin: 0px;">Get fast, free shipping with Amazon Prime</p>
+									<p style="margin: 2px 0px;">Prime members enjoy FREE Two-Day Shipping and exclusive access to music, movies, TV shows, original audio series, and Kindle books.</p>
+									<p style="margin: 0px;">> <a href="">Get started</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--header_top search部分-->
+					<div class="header_top_search pull-left">
+						<div class="input-group">
+							<span class="input-group-btn dropdown">
+								<button class="btn btn-default dropdown-toggle" data-toggle="dropdown"  type="button">
+									<span class="select_keyword">All</span>
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">All Departments</a></li>
+									<li><a href="#">Alexa Skills</a></li>
+									<li><a href="#">Amazon Devices</a></li>
+									<li><a href="#">Amazon Warehouse</a></li>
+									<li><a href="#">Appliances</a></li>
+									<li><a href="#">Apps & Games</a></li>
+									<li><a href="#">Arts, Crafts & Sewing</a></li>
+									<li><a href="#">Automotive Parts & Accessories</a></li>
+									<li><a href="#">Baby</a></li>
+									<li><a href="#">Beauty & Personal Care</a></li>
+									<li><a href="#">Books</a></li>
+									<li><a href="#">CDs & Vinyl</a></li>
+									<li><a href="#">Cell Phones & Accessories</a></li>
+									<li><a href="#">Clothing, Shoes & Jewelry</a></li>
+									<li><a href="#">   Women</a></li>
+									<li><a href="#">   Men</a></li>
+									<li><a href="#">   Girls</a></li>
+									<li><a href="#">   Boys</a></li>
+									<li><a href="#">   Baby</a></li>
+									<li><a href="#">Collectibles & Fine Art</a></li>
+									<li><a href="#">Computers</a></li>
+								</ul>
+							</span>
+							<input type="text" name="" id="" value="" class="form-control"/>
+							<span class="input-group-btn">
+								<button class="btn btn-warning" type="button">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</span>
+						</div>
+					</div>
+					<div class="header_top_ad pull-right">
+						<img class="img-responsive" src="img/header_right.jpg"/>
+					</div>
+				</div>
+				<!--header下部分-->
+				<div class="header_bottom">
+					<div class="header_bottom_dele pull-left">
+						<a class="select_dele">
+							<div class="pull-left">
+								<span class=""></span>
+							</div>
+							<div class="pull-left">
+								<span>Deliver to</span>
+								<span><strong>China</strong></span>
+							</div>
+						</a>						
+					</div>
+					<div class="header_bottom_midd pull-left">
+						<div class="header_bottom_midd_first pull-left">
+							<a>
+								<span>
+									<strong>Departments</strong>
+									<span class="caret"></span>
+								</span>
+							</a>
+							<div class="header_bottom_midd_fir_drop display_hidden">
+								<span class="glyphicon glyphicon-triangle-top pull-left"></span>
+								<div class="header_bottom_midd_fir_drop_content pull-left">
+									<ul class="list-unstyled">
+										<li class="">
+											<p class="pull-left">Prime Video</p><span class="glyphicon glyphicon-menu-right pull-right"></span>
+											<!--保留右侧-->
+											<div class="showlist display_hidden">
+												<div class="listdetail">
+													<div class="listdetail_row">
+														<h3>Prime Video</h3>
+														<ul class="list-unstyled">
+															<li>
+																<p>
+																	<a href="" style="display: block;">11</a>
+																	<font>22</font>
+																</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>	
+										</li>
+										<li class=""><p class="pull-left">Amazon Music</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Appstore for Android</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Echo & Alexa</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Fire Tablets</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Fire TV</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class="fir_drop_content_li_border"><p class="pull-left">Kindle E-readers & Books</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Books & Audible</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Movies, Music & Games</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Electronics, Computers & Office</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Home, Garden, Pets & Tools</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Food & Grocery</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Beauty & Health</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Toys, Kids & Baby</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Clothing, Shoes & Jewelry</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Handmade</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Sports & Outdoors</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class="fir_drop_content_li_border"><p class="pull-left">Automotive & Industrial</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Home Services</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Credit & Payment Products</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Full Store Directory</p></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<ul style="width: ;height: 18px;" class="list_serarch list-inline pull-left">
+							<li class=""><a href="">Your Amazon.com</a></li>							
+							<li class=""><a href="">Today'sDeals</a></li>
+							<li class=""><a href="">GiftCards</a></li>
+							<li class=""><a href="">Registry</a></li>
+							<li class=""><a href="">Sell</a></li>
+							<li class=""><a href="">Treasure Truck</a></li>
+						</ul>
+					</div>
+					<div class="header_bottom_rig pull-right">
+						<a class="header_bottom_rig_a2">
+							<span class="country_box">
+								<span class="pull-left">En</span>
+								<span class="pull-left span_country"></span>
+							</span>
+							<span style="padding-right: 10px;">
+								<span class="caret" style="margin-bottom: 5px;"></span>
+							</span>
+						</a>
+						<div class="en_drop display_hidden">
+							<span class="glyphicon glyphicon-triangle-top"></span>
+							<div class="en_drop_content">
+								<span><i class="radio_class"></i>English - EN</span>
+								<span><i class="radio_class_nocheck"></i>Español - ES</span>
+								<div class="learn_more">
+									<a href="">Learn more</a>
+								</div>
+								
+							</div>
+						</div>
+						<div class="a_divider"></div>
+						<a class="header_bottom_rig_a3">
+							<span>hello. sign in</span>
+							<span>
+								<strong>Account&List</strong>
+								<span class="caret"></span>
+							</span>
+						</a>
+						<div class="account_drop display_hidden">
+							<span class="glyphicon glyphicon-triangle-top"></span>
+							<div class="accont_drop_content">
+								<div class="account_content_sign">
+									<div class="content_sign_box">
+										<input type="" name="" id="" value="Sign in" class="btn btn-warning"/>
+										<span>New customer? <a href="">Start here.</a></span>
+									</div>
+								</div>
+								<div class="account_content_line ">
+									<p>Your Lists</p>
+									<ul class="list-unstyled">
+										<li><a href="">Create a List</a></li>
+										<li><a href="">Find a List or Registry</a></li>
+										<li><a href="">Find a Gift</a></li>
+										<li><a href="">Save Items from the Web</a></li>
+										<li><a href="">Wedding Registry</a></li>
+										<li><a href="">Baby Registry</a></li>
+										<li><a href="">Friends & Family Gifting</a></li>
+										<li><a href="">Pantry Lists</a></li>
+										<li><a href="">Your Hearts</a></li>
+										<li><a href="">Explore Idea Lists</a></li>
+										<li><a href="">Explore Showroom</a></li>
+										<li><a href="">Scout | Style Explorer</a></li>
+									</ul>
+								</div>
+								<div class="account_content_line2 ">
+									<p>Your Account</p>
+									<ul class="list-unstyled">
+										<li><a href="">Your Account</a></li>
+										<li><a href="">Your Orders</a></li>
+										<li><a href="">Your Lists</a></li>
+										<li><a href="">Your Recommendations</a></li>
+										<li><a href="">Your Subscribe & Save Items</a></li>
+										<li><a href="">Memberships & Subscriptions</a></li>
+										<li><a href="">Your Service Requests</a></li>
+										<li><a href="">Your Prime Membership</a></li>
+										<li><a href="">Your Garage</a></li>
+										<li><a href="">Your Pets</a></li>
+										<li><a href="">Register for a Business Account</a></li>
+										<li><a href="">Your Amazon Credit Cards</a></li>
+										<li><a href="">Your Content and Devices</a></li>
+										<li><a href="">Your Music Library</a></li>
+										<li><a href="">Your Amazon Photos</a></li>
+										<li><a href="">Your Amazon Drive</a></li>
+										<li><a href="">Your Prime Video</a></li>
+										<li><a href="">Your Kindle Unlimited</a></li>
+										<li><a href="">Your Watchlist</a></li>
+										<li><a href="">Your Video Library</a></li>
+										<li><a href="">Your Android Apps & Devices</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<a class="header_bottom_rig_a1">
+							<span>
+								<strong>Orders</strong>
+							</span>
+						</a>
+						<a class="header_bottom_rig_a1 header_bottom_rig_prime">
+							<span>
+								<strong>Try Prime</strong>
+								<span class="caret"></span>
+							</span>
+						</a>
+						<div class="prime_drop display_hidden">
+							<span class="glyphicon glyphicon-triangle-top"></span>
+							<div class="prime_drop_content">
+								<div class="prime_drop_content_line">
+									<div class="prime_drop_content_line_logo">
+										<img src="img/amazon_prime_logo.png"/>
+									</div>
+									<div class="prime_drop_content_line_word">
+										<p>Enjoy fast, free shipping on over 100 million items when you start your 30-day free trial</p>
+									</div>
+									<div class="prime_drop_content_line_btn">
+										<input type="button" name="" id="" value="Try Prime" class="btn btn-warning"/>
+									</div>
+									<div class="prime_drop_content_line_botom">
+										<img src="img/dog.png"/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="shoppingcart.html" class="header_bottom_rig_a4">
+							<span class="cartcar pull-left">
+								<span class="cartnum">3</span>
+							</span>
+							<strong>Cart</strong>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="hover_pageopacity display_hidden"></div>
+		<div class="gememain">
+			<!--游戏分类banner-->
+			<div class="gememain_type">
+				<ul class="list-inline list-unstyled">
+					<li><a href="">Video Game</a></li>
+					<li class="type_drow_head"><a href="">PS4</a><span class="caret"></span></li>
+					<li class="type_drow_head"><a href="">Xbox one</a><span class="caret"></span></li>
+					<li class="type_drow_head"><a href="">Switch</a><span class="caret"></span></li>
+					<li class="type_drow_head"><a href="">Wii U</a><span class="caret"></span></li>
+					<li class="type_drow_head"><a href="">PC</a><span class="caret"></span></li>
+					<li class="type_drow_head"><a href="">3DS</a><span class="caret"></span></li>
+					<li class="type_drow_head"><a href="">PS3</a><span class="caret"></span></li>
+					<li class="type_drow_head"><a href="">More Gaming</a><span class="caret"></span></li>
+				</ul>
+				<div class="type_drow">
+					<span class="glyphicon glyphicon-triangle-top"></span>
+					<span class="glyphicon glyphicon-triangle-top"></span>
+					<span class="glyphicon glyphicon-triangle-top"></span>
+					<span class="glyphicon glyphicon-triangle-top"></span>
+					<span class="glyphicon glyphicon-triangle-top"></span>
+					<span class="glyphicon glyphicon-triangle-top"></span>
+					<span class="glyphicon glyphicon-triangle-top"></span>
+					<span class="glyphicon glyphicon-triangle-top"></span>
+					<div class="type_drop_content">
+						<ul class="list-unstyled list-inline">
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+						</ul>
+						<ul class="list-unstyled list-inline">
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>2console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+						</ul>
+						<ul class="list-unstyled list-inline">
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>2console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+						</ul>
+						<ul class="list-unstyled list-inline">
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>2console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+						</ul>
+						<ul class="list-unstyled list-inline">
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>2console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+						</ul>
+						<ul class="list-unstyled list-inline">
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>2console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+						</ul>
+						<ul class="list-unstyled list-inline">
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>2console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/typedrop1_1.jpg"/>
+									<p>console</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--banner广告-->
+			<div class="gamemain_bannerad">
+				<a href=""><img src="img/gemebanner_ad.png"/></a>
+			</div>
+			<div class="gamemain_title">
+				<div class="gamemain_title_tree">
+					<ul class="list-unstyled list-inline">
+						<li><a href="">Video Games</a></li>
+						<li><span>></span></li>
+						<li><a href="">PlayStation 4</a></li>
+						<li><span>></span></li>
+						<li><a href="">Consoles</a></li>
+					</ul>
+				</div>
+				<div class="gamemain_title_name">
+					<h3>PlayStation 4 Pro 1TB Limited Edition Console - Marvel's Spider-Man Bundle [Discontinued]
+						<span><a href="">by Sony</a></span>
+					</h3>
+				</div>
+				<div class="gamemain_title_grade">
+					<span class="gamemain_title_grade_star">
+						<span class="glyphicon star_full glyphicon-star"></span>
+						<span class="glyphicon star_full glyphicon-star"></span>
+						<span class="glyphicon star_full glyphicon-star"></span>
+						<span class="glyphicon star_full glyphicon-star"></span>
+						<span class="glyphicon star_empty glyphicon-star-empty"></span>
+						<span class="caret"></span>
+					</span>
+					<ul class="list-inline list-unstyled">
+						<li><a href=""> 30 customer reviews </a></li>
+						<li>|</li>
+						<li><a href="">38 answered questions</a></li>
+						<li>|</li>
+						<li><span>Rated:</span><a href=""> Rating Pending</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="gamemain_game">
+				<div class="gamemain_game_img pull-left">
+					<div class="gamemain_game_imgLarge">
+						<ul class="list-unstyled">
+							<li>
+								<!--<img src="img/game_big1.jpg"/>-->
+								<div>
+									<a href="img/game_big1.jpg" class="jqzoom" rel='gal1' title="">
+            							<img class="imgLarge_img" src="img/game_big1.jpg" title="">
+        							</a>
+								</div>
+							</li>
+							<li class="display_hidden">
+								<!--<img class="imgLarge_img" src="img/game_big2.jpg"/>-->
+								<div>
+									<a href="img/game_big2.jpg" class="jqzoom" rel='gal1' title="">
+            							<img class="imgLarge_img" src="img/game_big2.jpg" title="">
+        							</a>
+								</div>
+							</li>
+							<li class="display_hidden">
+								<!--<img class="imgLarge_img" src="img/game_big3.jpg"/>-->
+								<div>
+									<a href="img/game_big3.jpg" class="jqzoom" rel='gal1' title="">
+            							<img class="imgLarge_img" src="img/game_big3.jpg" title="">
+        							</a>
+								</div>
+							</li>
+							<li class="display_hidden">
+								<!--<img class="imgLarge_img" src="img/game_big4.jpg"/>-->
+								<div>
+									<a href="img/game_big4.jpg" class="jqzoom" rel='gal1' title="">
+            							<img class="imgLarge_img" src="img/game_big4.jpg" title="">
+        							</a>
+								</div>
+							</li>
+							<li class="display_hidden">
+								<!--<img class="imgLarge_img" src="img/game_big5.jpg"/>-->
+								<div>
+									<a href="img/game_big5.jpg" class="jqzoom" rel='gal1' title="">
+            							<img class="imgLarge_img" src="img/game_big5.jpg" title="">
+        							</a>
+								</div>
+							</li>
+							<li class="display_hidden">
+								<!--<img class="imgLarge_img" src="img/game_big6.jpg"/>-->
+								<div>
+									<a href="img/game_big6.jpg" class="jqzoom" rel='gal1' title="">
+            							<img class="imgLarge_img" src="img/game_big6.jpg" title="">
+        							</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="gamemain_game_imgControl">
+						<ul class="list-unstyled list-inline">
+							<li class="imgControl_selected"><img src="img/game_small1.jpg"/></li>
+							<li><img src="img/game_small2.jpg"/></li>
+							<li><img src="img/game_small3.jpg"/></li>
+							<li><img src="img/game_small4.jpg"/></li>
+							<li><img src="img/game_small5.jpg"/></li>
+							<li><img src="img/game_small6.jpg"/></li>
+						</ul>
+					</div>
+				</div>
+				<div class="gamemain_game_price pull-right">
+					<div class="trade_in">
+						<div class="btn-group">
+							<button class="btn"><strong>Get it for less with trade-in.</strong> See what you'll save.</button>
+							<button class="btn">
+								<span class="caret"></span>
+								<span class="sr-only">Toggle Dropdown</span>
+							</button>
+						</div>
+						<div class="trade_drop display_hidden">
+							<div class="trade_drop_head">
+								<p>Trade in. Get paid. Go shopping.</p>
+								<p>Ship it to us for free.<a href="">Learn more</a></p>
+							</div>
+							<div class="trade_drop_middle">
+								<p>View past purchases eligible to trade in when you sign in.</p>
+								<a href="">Sign in now</a>
+							</div>
+							<div class="trade_drop_bottom">
+								<span class="glyphicon glyphicon-search"></span>
+								<a href="">Search for items to trade in</a>
+								<span>(even if bought elsewhere)</span>
+							</div>
+						</div>
+					</div>
+					<div class="gamemain_game_price_divide"></div>
+					<div class="gamemain_game_price_divide"></div>
+					<div class="gamemain_game_price_count">
+						<div class="count_now">
+							<a href="">168 used & new from $550.00</a>
+						</div>
+						<div class="see_more">
+							<a href="">See All Buying option</a>
+						</div>
+					</div>
+					<div class="gamemain_game_price_divide"></div>
+					<div class="gamemain_game_price_addList">
+						<div class="add_seller">
+							Other Sellers on Amazon: <a href="">168 used & new from $550.00</a>
+						</div>
+						<div class="add_tolist">
+							<a href="">Add To List</a>
+						</div>
+						<div class="add_share">
+							<a href="">share</a>
+							<a href=""><span class="share_email"></span></a>
+							<a href=""><span class="share_faceb"></span></a>
+							<a href=""><span class="share_tw"></span></a>
+							<a href=""><span class="share_pint"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="gamemain_detail">
+				<div class="gamemain_detail_about">
+					<h2>About the product</h2>
+					<ul>
+						<li><span>This Limited Edition Marvel’s Spider-Man PS4 Pro bundle includes a fully customized Amazing Red PS4 Pro console featuring the Spider icon, DUALSHOCK 4 wireless controller, Marvel’s Spider-Man game, and digital content.</span></li>
+						<li><span>Experience a brand-new and authentic Spider-Man adventure. After eight years behind the mask, Peter Parker is a crime fighting master. Feel the power with improvisational combat, fluid urban traversal, dynamic acrobatics, and environmental interactions.</span></li>
+						<li><span>On the PS4 Pro system, 4K TV owners can experience the game in 2160p dynamic 4K resolution achieved through temporal injection, while HD TV owners will benefit from increased image clarity through super-sampling. HDR TV owners can experience the game in high-dynamic range color (HDR).</span></li>
+					</ul>
+				</div>
+				<div class="gamemain_bought_together">
+					<h2>Frequently bought together</h2>
+					
+				</div>
+				<div class="gamemain_bought_Sponsored">
+					<h2>Sponsored products related to this item <a href="">(What's this?)</a></h2>
+					<p class="pull-right">Page <span class="page_Sponsor">1</span> of 2</p>
+					<div class="gamemain_bought_Sponsored_lunbo">
+						<div class="Sponsored_lunbo_img">
+							<ul class="list-unstyled list-inline">
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/sponsor1_1.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Computer Over Ear Stereo Headphones for PC MAC Notebook Gamers Smart Phone Mobiles iPad(Black Blue)
+SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Com...
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>66</a>
+												<p>$21.99 <span></span></p>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/sponsor1_2.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Computer Over Ear Stereo Headphones for PC MAC Notebook Gamers Smart Phone Mobiles iPad(Black Blue)
+SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Com...
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>134</a>
+												<p>$25.99 <span></span></p>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/sponsor1_3.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Computer Over Ear Stereo Headphones for PC MAC Notebook Gamers Smart Phone Mobiles iPad(Black Blue)
+SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Com...
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>62</a>
+												<p>$29.99 <span></span></p>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/sponsor1_4.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Computer Over Ear Stereo Headphones for PC MAC Notebook Gamers Smart Phone Mobiles iPad(Black Blue)
+SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Com...
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>265</a>
+												<p>$24.99 <span></span></p>
+											</div>
+										</a>
+									</div>									
+								</li>
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/sponsor1_5.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Computer Over Ear Stereo Headphones for PC MAC Notebook Gamers Smart Phone Mobiles iPad(Black Blue)
+SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Com...
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>45</a>
+												<p>$27.99 <span></span></p>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/sponsor1_6.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Computer Over Ear Stereo Headphones for PC MAC Notebook Gamers Smart Phone Mobiles iPad(Black Blue)
+SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Com...
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>66</a>
+												<p>$21.99 <span></span></p>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/sponsor1_7.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Computer Over Ear Stereo Headphones for PC MAC Notebook Gamers Smart Phone Mobiles iPad(Black Blue)
+SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Com...
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>66</a>
+												<p>$21.99 <span></span></p>
+											</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+							<ul class="list-unstyled list-inline display_hidden">
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/sponsor2_1.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												1SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Computer Over Ear Stereo Headphones for PC MAC Notebook Gamers Smart Phone Mobiles iPad(Black Blue)
+SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Com...
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>66</a>
+												<p>$21.99 <span></span></p>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/sponsor2_2.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Computer Over Ear Stereo Headphones for PC MAC Notebook Gamers Smart Phone Mobiles iPad(Black Blue)
+SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Com...
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>66</a>
+												<p>$21.99 <span></span></p>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/sponsor2_3.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Computer Over Ear Stereo Headphones for PC MAC Notebook Gamers Smart Phone Mobiles iPad(Black Blue)
+SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Com...
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>66</a>
+												<p>$21.99 <span></span></p>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/sponsor2_4.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Computer Over Ear Stereo Headphones for PC MAC Notebook Gamers Smart Phone Mobiles iPad(Black Blue)
+SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Com...
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>66</a>
+												<p>$21.99 <span></span></p>
+											</div>
+										</a>
+									</div>									
+								</li>
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/sponsor2_5.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Computer Over Ear Stereo Headphones for PC MAC Notebook Gamers Smart Phone Mobiles iPad(Black Blue)
+SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Com...
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>66</a>
+												<p>$21.99 <span></span></p>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/sponsor2_6.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Computer Over Ear Stereo Headphones for PC MAC Notebook Gamers Smart Phone Mobiles iPad(Black Blue)
+SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Com...
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>66</a>
+												<p>$21.99 <span></span></p>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/sponsor2_7.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Computer Over Ear Stereo Headphones for PC MAC Notebook Gamers Smart Phone Mobiles iPad(Black Blue)
+SADES Gaming Headset with Mic Volume Control LED, Yanni Sades SA806 3.5mm Wired Com...
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>66</a>
+												<p>$21.99 <span></span></p>
+											</div>
+										</a>
+									</div>
+								</li>
+							</ul>					
+						</div>
+						<div class="Sponsored_lunbo_control_left">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</div>
+						<div class="Sponsored_lunbo_control_right">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+				<div class="gamemain_bought_buyafter">
+					<h2>What other items do customers buy after viewing this item?</h2>
+					<div class="gamemain_bought_buyafter_lunbo">
+						<div class="buyafter_lunbo_img">
+							<ul class="list-unstyled list-inline">
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/buyafter1_5.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												Marvel’s Spider-Man - PlayStation 4 Sony
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>66</a>
+												<p>$21.99 <span></span></p>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/buyafter1_2.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												PlayStation 4 Slim 1TB Limited Edition Console - Days of Play Bundle [Discontinued] Sony
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>134</a>
+												<p>$25.99 <span></span></p>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/buyafter1_3.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												Kindle E-reader - Black, 6" Glare-Free Touchscreen Display, Wi-Fi, Built-In Audible - Includes… 
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>10,789</a>
+												<p>$79.99 <span></span></p>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="">
+										<a href="">
+											<img src="img/buyafter1_4.jpg"/>
+											<div class="Sponsored_lunbo_img_name">
+												Kindle Paperwhite E-reader - White, 6" High-Resolution Display (300 ppi) with Built-in Light,…
+											</div>
+											<div class="Sponsored_lunbo_img_star">
+												<a><span></span>64,209</a>
+												<p>$24.99 <span></span></p>
+											</div>
+										</a>
+									</div>									
+								</li>								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="gamemain_bought_question">
+					<div class="bought_questioninput">
+						<h1>Have a question?</h1>
+						<p>Find answers in product info, Q&As, reviews</p>
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+							<input type="" name="" id="" value="" class="form-control"/>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="gamemain_bought_manufacturer">
+					<h2>From the manufacturer</h2>
+					<!--第一个-->
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					    <!-- Indicators -->
+					    <ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					    </ol>
+				
+					    <!-- Wrapper for slides -->
+					    <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						      <img src="img/manu1_1.jpg" alt="...">
+						    </div>
+						    <div class="item">
+						      <img src="img/manu1_2.jpg" alt="...">
+						    </div>
+						    <div class="item">
+						      <img src="img/manu1_3.jpg" alt="...">
+						    </div>
+						
+						  <!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							    <span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+					<!--第二个-->
+					<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+					    <!-- Indicators -->
+					    <ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+					    </ol>
+				
+					    <!-- Wrapper for slides -->
+					    <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						      <img src="img/manu2_1.jpg" alt="...">
+						    </div>
+						    <div class="item">
+						      <img src="img/manu2_2.jpg" alt="...">
+						    </div>
+						
+						  <!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							    <span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+					<!--第三个-->
+					<div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
+					    <!-- Indicators -->
+					    <ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+					    </ol>
+				
+					    <!-- Wrapper for slides -->
+					    <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						      <img src="img/manu3_1.jpg" alt="...">
+						    </div>
+						    <div class="item">
+						      <img src="img/manu3_2.jpg" alt="...">
+						    </div>
+						
+						  <!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic3" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							    <span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic3" role="button" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+					<!--第四个-->
+					<div id="carousel-example-generic4" class="carousel slide" data-ride="carousel">
+					    <!-- Indicators -->
+					    <ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic4" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-example-generic4" data-slide-to="1"></li>
+						    <li data-target="#carousel-example-generic4" data-slide-to="2" class="active"></li>
+						    <li data-target="#carousel-example-generic4" data-slide-to="3"></li>
+					    </ol>
+				
+					    <!-- Wrapper for slides -->
+					    <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						      <img src="img/manu4_1.jpg" alt="...">
+						    </div>
+						    <div class="item">
+						      <img src="img/manu4_2.jpg" alt="...">
+						    </div>
+						    <div class="item active">
+						      <img src="img/manu4_3.jpg" alt="...">
+						    </div>
+						    <div class="item">
+						      <img src="img/manu4_4.jpg" alt="...">
+						    </div>
+						
+						  <!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic4" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							    <span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic4" role="button" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+					
+				</div>			
+			</div>
+		
+		<footer>
+			<div class="footer_toBar">
+				<p class="text-center">Back to Top</p>
+			</div>
+			<div class="footer_list">
+				<div class="footer_list_top">
+					<div class="footer_list_top_1">
+						<h3>Get to Know Us</h3>
+						<ul class="list-unstyled pull-left">
+							<li><a href="">Careers</a></li>
+							<li><a href="">Blog</a></li>
+							<li><a href="">About Amazon</a></li>
+							<li><a href="">Investor Relations</a></li>
+							<li><a href="">Amazon Devices</a></li>
+						</ul>
+					</div>
+					<div class="footer_list_top_1">
+						<h3>Make Money with Us</h3>
+						<ul class="list-unstyled">
+							<li><a href="">Sell on Amazon</a></li>
+							<li><a href="">Sell on Amazon Handmade</a></li>
+							<li><a href="">Sell Your Services on Amazon</a></li>
+							<li><a href="">Sell on Amazon Business</a></li>
+							<li><a href="">Sell Your Apps on Amazon</a></li>
+							<li><a href="">Become an Affiliate</a></li>
+							<li><a href="">Advertise Your Products</a></li>
+							<li><a href="">Self-Publish with Us</a></li>
+							<li><a href="">›See all</a></li>
+						</ul>
+					</div>
+					<div class="footer_list_top_1">
+						<h3>Amazon Payment Products</h3><ul class="list-unstyled">
+							<li><a href="">Amazon Rewards Visa Signature Cards</a></li>
+							<li><a href="">Amazon.com Store Card</a></li>
+							<li><a href="">Amazon.com Corporate Credit Line</a></li>
+							<li><a href="">Shop with Points</a></li>
+							<li><a href="">Credit Card Marketplace</a></li>
+							<li><a href="">Reload Your Balance</a></li>
+							<li><a href="">Amazon Currency Converter</a></li>
+						</ul>
+					</div>
+					<div class="footer_list_top_2">
+						<h3>Let Us Help You</h3>
+						<ul class="list-unstyled">
+							<li><a href="">Your Account</a></li>
+							<li><a href="">Your Orders</a></li>
+							<li><a href="">Shipping Rates & Policies</a></li>
+							<li><a href="">Amazon Prime</a></li>
+							<li><a href="">Returns & Replacements</a></li>
+							<li><a href="">Manage Your Content and Devices</a></li>
+							<li><a href="">Amazon Assistant</a></li>
+							<li><a href="">Help</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_list_bottom">
+					<div class="footer_list_bottom_content">
+						<div class="footer_list_bottom_content_logo">
+							<span></span>
+						</div>
+						<div class="footer_list_bottom_content_country">
+							<a href="">
+								<span></span>
+								English
+							</a>
+							<a href="">
+								<span></span>
+								United States
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer_bottomlist">
+				<div class="bottomlist_line">
+					<table border="0" cellspacing="0" cellpadding="">
+						<tr>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="">
+									AmazonFresh<br />
+									<span>
+										Groceries & More<br />
+										Right To Your Door
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+						</tr>
+					
+						
+					</table>
+				</div>
+				<div class="bottomlist_under">
+					<p class="text-center"><a href="">Conditions of Use</a> <a href=""> Notice</a> <a href="">Interest-BasedAds</a> © 1996-2018, Amazon.com, Inc. or its affiliates</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

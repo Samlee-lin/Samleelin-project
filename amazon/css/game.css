@@ -1,0 +1,527 @@
+.gememain{
+	background-color: #FFFFFF;
+}
+.gememain_type{
+	height:33px;
+	width: 100%;
+	border: 1px solid #DDDDDD;
+	background:#fafafa;
+	position: relative;
+}
+.gememain_type>ul{
+	margin-left: 25px;
+}
+.gememain_type>ul>li{
+	line-height: 30px;
+	padding: 0px 5px;
+	margin-right: 15px;
+}
+.gememain_type>ul>li:hover{
+	border-bottom: 2px solid #ff9900;
+}
+.gememain_type>ul>li:first-of-type a{
+	color: #e47911;
+	font-weight: bold;
+}
+.gememain_type>ul>li:first-of-type a{
+	text-decoration: none;
+}
+.gememain_type>ul>li:not(:first-of-type) a{
+	color: #333333;
+}
+.gememain_type>ul>li:not(:first-of-type) a:hover{
+	text-decoration: none;
+	color: #ff9900;
+}
+.type_drow{
+	position: absolute;
+	width: 100%;
+	top: 36px;
+	display: none;
+}
+.type_drop_content{
+	width: 100%;
+	border: 1px solid #bbbbbb;
+	background-color: #FFFFFF;
+	/*border-left: none;
+	border-right: none;*/
+	height: 155px;
+	padding: 14px;
+	margin-top: -8px;
+	padding-left: 25px;
+}
+.type_drow>span{
+	color: #BBBBBB;
+	margin-top: 10px;
+	position: absolute;
+	top: -26px;
+	display: none;
+}
+.type_drow>span:nth-of-type(1){
+	margin-left: 150px;
+}
+.type_drow>span:nth-of-type(2){
+	margin-left: 240px;
+}
+.type_drow>span:nth-of-type(3){
+	margin-left: 314px;
+}
+.type_drow>span:nth-of-type(4){
+	margin-left: 380px;
+}
+.type_drow>span:nth-of-type(5){
+	margin-left: 436px;
+}
+.type_drow>span:nth-of-type(6){
+	margin-left: 498px;
+}
+.type_drow>span:nth-of-type(7){
+	margin-left: 558px;
+}
+.type_drow>span:nth-of-type(8){
+	margin-left: 670px;
+}
+.type_drop_content>ul{
+	display: none;
+}
+.type_drop_content>ul>li{
+	margin-right: 15px;
+}
+.type_drop_content>ul>li a{
+	color: #333333;
+	font-size: 13px;
+	text-align: center;
+}
+.type_drop_content>ul>li a:hover{
+	color: #E47911;
+	text-decoration: underline;
+}
+.gamemain_bannerad img{
+	display: block;
+	margin: 0px auto;
+}
+.gamemain_title{
+	width: 100%;
+	padding: 15px 15px 0px 15px;
+	background-color: #333333;
+}
+.gamemain_title_tree{
+	color: #CCCCCC;
+}
+.gamemain_title_tree li{
+	padding: 0px;
+}
+.gamemain_title_tree a{
+	color: #CCCCCC;
+	text-decoration: none;
+}
+.gamemain_title_tree a:hover{
+	color: #CCCCCC;
+	text-decoration: underline;
+}
+.gamemain_title_name h3{
+	color: #FFFFFF;
+	width: 820px;
+	font-size: 28px;
+}
+.gamemain_title_name h3 span{
+	font-size: 12px;
+}
+.gamemain_title a{
+	color: #56c2ec;
+	text-decoration: none;
+}
+.gamemain_title a:hover{
+	color: #c45500;
+	text-decoration: underline;
+}
+.gamemain_title_grade .gamemain_title_grade_star .star_full{
+	color: #ffc000;
+}
+.gamemain_title_grade .gamemain_title_grade_star .star_empty{
+	color: #FFFFFF;
+}
+.gamemain_title_grade .caret{
+	color: #CCCCCC;
+}
+.gamemain_title_grade ul{
+	display: inline-block;
+	color: #CCCCCC;
+	margin-left: 10px;
+}
+.gamemain_game{
+	width: 100%;
+	height: 640px;
+	padding: 15px 18px;
+}
+.gamemain_game_img{
+	width: 790px;
+	
+}
+.gamemain_game_imgLarge{
+	width:790px;
+	height: 530px;
+	/*overflow: hidden;*/
+}
+.gamemain_game_imgLarge ul li{
+	height: 510px;
+	width: 790px;
+}
+.gamemain_game_imgLarge ul li .imgLarge_img{
+	max-height: 510px;
+	max-width: 700px;
+	display: block;
+	margin: 0px auto;
+}
+.gamemain_game_imgControl{
+	width: 790px;
+	height: 80px;
+}
+.gamemain_game_imgControl ul li{
+	border: 1px solid #C0C0C0;
+	height: 78px;
+	text-align: center;
+}
+.gamemain_game_imgControl ul li:hover{
+	border: 1px solid #262626;
+}
+.imgControl_selected{
+	box-shadow: 0 0 3px 2px rgba(228,121,17,.5);
+    border: 1px solid #FF9900 !important;
+}
+.gamemain_game_imgControl ul li img{
+	display: block;
+	margin: 0px auto;
+}
+
+.gamemain_game_price{
+	width: 420px;
+	height: 590px;
+	margin-right: 10px;
+	box-shadow: -0.5px 1.5px 1px 1px rgba(0,0,0,.45);
+}
+.gamemain_game_price .trade_in{
+	margin: 40px auto 20px auto;
+	width: 380px;
+	height: 34px;
+	position: relative;
+}
+.trade_drop{
+	position: absolute;
+	top: 0px;
+	width: 380px;
+	height: 253px;
+	border: 1px solid #DDDDDD;
+	background-color: #FFFFFF;
+	border-radius: 3px;
+	box-shadow: 0 2px 4px rgba(0,0,0,.13);
+	z-index: 101;
+}
+.trade_drop_head{
+	background: #01a4ba url(../img/tradedroppic.jpg) no-repeat left;
+	width: 379px;
+	height: 59px;
+	border-bottom:1px solid #122B40; 
+	padding-left: 90px;
+}
+.trade_drop_head p{
+	margin: 0px;
+	padding: 0px;
+	color: #FFFFFF;
+}
+.trade_drop_head p:first-of-type{
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 30px;
+}
+.trade_drop_head p:last-of-type{
+	font-size: 12px;
+	line-height: 20px;
+}
+.trade_drop_head p a{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.trade_drop_head p a:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.trade_drop_middle{
+	text-align: center;
+	height: 156px;
+	border-bottom: 1px solid #DDDDDD;
+}
+.trade_drop_middle p{
+	padding-top: 40px;
+	padding-bottom: 20px;
+	margin: 0px auto;
+	width: 310px;
+	text-align: center;
+	font-size: 16px;
+	color: #111111;
+	font-weight: bold;
+}
+.trade_drop_middle a{
+	color: #0066C0;
+	font-size: 15px;
+}
+.trade_drop_middle a:hover,.trade_drop_bottom a:hover{
+	color: #c45500;
+	text-decoration: underline;
+}
+.trade_drop_bottom{
+	height: 35px;
+	line-height: 35px;
+	font-size: 13px;
+	text-align: center;
+}
+.trade_drop_bottom a{
+	color: #0066C0;
+	font-weight: bold;
+}
+.trade_drop_bottom span:last-of-type{
+	color: #666666;
+}
+.gamemain_game_price .btn-group button{
+	background: #eeeff2 !important;
+	border: 1px solid #009502 !important;
+}
+.gamemain_game_price_divide{
+	height: 1px;
+	border-bottom: 1px solid #CCCCCC;
+	margin-top: 10px;
+}
+.gamemain_game_price_count{
+	width: 380px;
+	margin: 20px auto;
+	margin-top: 10px;
+	text-align: center;
+}
+.count_now{
+	font-size: 17px;
+}
+.count_now a,.add_seller a,.add_share a{
+	color:#0066C0;
+}
+.count_now a:hover,.add_seller a:hover,.add_share a:hover{
+	color: #c45500;
+	text-decoration: underline;
+}
+.see_more{
+	margin-top: 10px;
+}
+.see_more a{
+	display: inline-block;
+	width: 360px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #111111;
+	background-color: #f2c965;
+	border: 1px solid #a88734;
+	border-radius: 5px;
+	font-size: 13px;
+}
+.see_more a:hover{
+	text-decoration: none;
+	background-color: #f1c65c;
+}
+
+.gamemain_game_price_addList{
+	width: 380px;
+	margin: 20px auto;
+	text-align: center;
+}
+.add_seller{
+	color: #f2c965;
+	font-size: 13px;
+}
+.add_tolist{
+	margin-top: 10px;
+}
+.add_tolist a{
+	display: inline-block;
+	width: 360px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #111111;
+	background-color: #edeef1;
+	border: 1px solid #C0C0C0;
+	border-radius: 5px;
+	font-size: 13px;
+}
+.add_tolist a:hover{
+	text-decoration: none;
+}
+.add_share {
+	margin-top: 20px;
+	line-height: 20px;
+}
+.add_share a{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 5px;
+}
+.add_share span{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+.share_email{
+	background: url(../img/email.jpg) no-repeat;
+}
+.share_faceb{
+	background: url(../img/facebook.jpg) no-repeat;
+}
+.share_tw{
+	background: url(../img/twitter.jpg) no-repeat;
+}
+.share_pint{
+	background: url(../img/pint.jpg) no-repeat;
+}
+.gamemain_detail{
+	padding: 0px 18px;
+}
+.gamemain_detail_about{
+	padding-bottom: 50px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.gamemain_detail h2{
+	color: #C60;
+	font-size: 16px;
+	font-weight: bold;
+}
+.gamemain_detail_about ul{
+	padding-left: 18px;
+	color: #949494;
+	width: 800px;
+	font-size: 13px;
+}
+.gamemain_detail_about ul li span{
+	color: #111111 !important; 
+}
+
+.gamemain_bought_Sponsored,.gamemain_bought_buyafter,.gamemain_bought_together{
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 10px;
+}
+
+
+
+
+.Sponsored_lunbo_img,.buyafter_lunbo_img{
+	/*padding: 0px 30px;*/
+	width: auto;
+	height: 274px;
+	width: 100%;
+	overflow: hidden;
+}
+.Sponsored_lunbo_img ul,.buyafter_lunbo_img ul{
+	padding: 0px 20px;
+	padding: 0px 20px 0px 25px;
+}
+.Sponsored_lunbo_img ul li,.buyafter_lunbo_img ul li{
+	width: 160px;
+	height: 274px;
+	margin-left: 15px;
+	vertical-align: top;
+}
+.Sponsored_lunbo_img ul li a,.buyafter_lunbo_img ul li a{
+	color: #0066C0;
+}
+.Sponsored_lunbo_img ul li a:hover,.buyafter_lunbo_img ul li a:hover{
+	color: #c45500;
+}
+.Sponsored_lunbo_img_name{
+	width: 160px;
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+.Sponsored_lunbo_img_star a{
+	display: inline-block;
+	cursor: pointer;
+	color: #0066C0;
+}
+.Sponsored_lunbo_img_star a:hover{
+	text-decoration: none;
+}
+.Sponsored_lunbo_img_star a>span{
+	width: 80px;
+	height: 18px;
+	display: inline-block;
+	background: url(../img/starSpon_4.jpg) no-repeat;
+	
+}
+.Sponsored_lunbo_img_star p{
+	margin: 0px;
+	color: #B12704;
+}
+.Sponsored_lunbo_img_star p>span{
+	width: 50px;
+	height: 15px;
+	display: inline-block;
+	background: url(../img/primeSpon.jpg) no-repeat;
+	vertical-align: text-bottom;
+}
+.gamemain_bought_Sponsored_lunbo,.gamemain_bought_buyafter_lunbo{
+	position: relative;
+}
+.Sponsored_lunbo_control_left{
+	left: 0px;
+}
+.Sponsored_lunbo_control_right{
+	right: 0px;
+}
+.Sponsored_lunbo_control_left,.Sponsored_lunbo_control_right{
+	position: absolute;
+	top: 110px;
+	width: 34px;
+	height: 37px;
+	border: 1px solid #C0C0C0;
+	border-radius: 3px;
+	background: #f3f4f7;
+	text-align: center;
+	line-height: 37px;
+	cursor: pointer;
+}
+.Sponsored_lunbo_control_left:hover,.Sponsored_lunbo_control_right:hover{
+	background: #dcdfe4;
+}
+.gamemain_bought_Sponsored>p{
+	color: #dcdfe4;
+	font-weight: bold;
+}
+.gamemain_bought_question{
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 40px;
+}
+.bought_questioninput h1{
+	color: #111111;
+	font-weight: bold;
+	font-size: 21px;
+}
+.bought_questioninput p{
+	color: #555555;
+	font-size: 12px;
+}
+.bought_questioninput input{
+	width: 1000px;
+	
+}
+.gamemain_bought_manufacturer .carousel-indicators li{
+	border: 1px solid #000000 !important;
+	width: 15px !important;
+	height: 15px !important;
+}
+.gamemain_bought_manufacturer .carousel-indicators .active{
+	background-color: #FFA500;
+	width: 17px !important;
+	height: 17px !important;
+}
+.gamemain_bought_manufacturer .carousel-control.right,.gamemain_bought_manufacturer .carousel-control.left{
+	background-image: none;
+}

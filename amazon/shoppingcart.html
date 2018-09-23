@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>shoppingcart</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+		<script src="bootstrap/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body style="min-width: 980px;">
+		<!--头部header-->
+		<div class="banner_ad">
+			<a href="#"><img src="img/header_topad.jpg"/></a>
+		</div>
+		<header>
+			<div class="container-fluid">
+				<!--header上部分-->
+				<div class="header_top row">
+					<!--header-top logo部分-->
+					<div class="header_top_logo pull-left">
+						<div class="header_top_logo_main">
+							<a class="logo_a_left" href="#">
+								<span class="logo_left"></span>
+								<span class="logo_right"></span>
+							</a>
+							<a class="logo_a_right" href="">
+								Try Prime
+							</a>
+							<div class="logo_a_right_hover display_hidden">
+								<span class="glyphicon glyphicon-triangle-left pull-left" style="color: #FFFFFF;"></span>
+								<div class="logo_a_right_hover_content pull-left">
+									<p class="text-warning" style="margin: 0px;">Get fast, free shipping with Amazon Prime</p>
+									<p style="margin: 2px 0px;">Prime members enjoy FREE Two-Day Shipping and exclusive access to music, movies, TV shows, original audio series, and Kindle books.</p>
+									<p style="margin: 0px;">> <a href="">Get started</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--header_top search部分-->
+					<div class="header_top_search pull-left">
+						<div class="input-group">
+							<span class="input-group-btn dropdown">
+								<button class="btn btn-default dropdown-toggle" data-toggle="dropdown"  type="button">
+									<span class="select_keyword">All</span>
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">All Departments</a></li>
+									<li><a href="#">Alexa Skills</a></li>
+									<li><a href="#">Amazon Devices</a></li>
+									<li><a href="#">Amazon Warehouse</a></li>
+									<li><a href="#">Appliances</a></li>
+									<li><a href="#">Apps & Games</a></li>
+									<li><a href="#">Arts, Crafts & Sewing</a></li>
+									<li><a href="#">Automotive Parts & Accessories</a></li>
+									<li><a href="#">Baby</a></li>
+									<li><a href="#">Beauty & Personal Care</a></li>
+									<li><a href="#">Books</a></li>
+									<li><a href="#">CDs & Vinyl</a></li>
+									<li><a href="#">Cell Phones & Accessories</a></li>
+									<li><a href="#">Clothing, Shoes & Jewelry</a></li>
+									<li><a href="#">   Women</a></li>
+									<li><a href="#">   Men</a></li>
+									<li><a href="#">   Girls</a></li>
+									<li><a href="#">   Boys</a></li>
+									<li><a href="#">   Baby</a></li>
+									<li><a href="#">Collectibles & Fine Art</a></li>
+									<li><a href="#">Computers</a></li>
+								</ul>
+							</span>
+							<input type="text" name="" id="" value="" class="form-control"/>
+							<span class="input-group-btn">
+								<button class="btn btn-warning" type="button">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</span>
+						</div>
+					</div>
+					<div class="header_top_ad pull-right">
+						<img class="img-responsive" src="img/header_right.jpg"/>
+					</div>
+				</div>
+				<!--header下部分-->
+				<div class="header_bottom">
+					<div class="header_bottom_dele pull-left">
+						<a class="select_dele">
+							<div class="pull-left">
+								<span class=""></span>
+							</div>
+							<div class="pull-left">
+								<span>Deliver to</span>
+								<span><strong>China</strong></span>
+							</div>
+						</a>						
+					</div>
+					<div class="header_bottom_midd pull-left">
+						<div class="header_bottom_midd_first pull-left">
+							<a>
+								<span>
+									<strong>Departments</strong>
+									<span class="caret"></span>
+								</span>
+							</a>
+							<div class="header_bottom_midd_fir_drop display_hidden">
+								<span class="glyphicon glyphicon-triangle-top pull-left"></span>
+								<div class="header_bottom_midd_fir_drop_content pull-left">
+									<ul class="list-unstyled">
+										<li class="">
+											<p class="pull-left">Prime Video</p><span class="glyphicon glyphicon-menu-right pull-right"></span>
+											<!--保留右侧-->
+											<!--第一个-->
+											<div class="showlist display_hidden">
+												<div class="listdetail">
+													<div class="listdetail_row ">
+														<h3>Prime Videos</h3>
+														<ul class="list-unstyled">
+															<li>
+																<p><a href="">All Videos</a></p>
+																<span>All TVshows, movies, and more</span>
+															</li>
+															<li>
+																<p><a href="">All Videos</a></p>
+																<span>All TVshows, movies, and more</span>
+															</li>
+															<li>
+																<p><a href="">All Videos</a></p>
+																<span>All TVshows, movies, and more</span>
+															</li>
+															<li>
+																<p><a href="">All Videos</a></p>
+																<span>All TVshows, movies, and more</span>
+															</li>
+															<li>
+																<p><a href="">All Videos</a></p>
+																<span>All TVshows, movies, and more</span>
+															</li>
+														</ul>
+													</div>
+													<div class="listdetail_row">
+														<h3>More To Explore</h3>
+														<ul class="list-unstyled">
+															<li>
+																<p><a href="">All Videos</a></p>
+																<span>All TVshows, movies, and more</span>
+															</li>
+															<li>
+																<p><a href="">All Videos</a></p>
+																<span>All TVshows, movies, and more</span>
+															</li>
+															<li>
+																<p><a href="">All Videos</a></p>
+																<span>All TVshows, movies, and more</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>											
+										
+										</li>
+										<li class="">
+											<p class="pull-left">Amazon Music</p><span class="glyphicon glyphicon-menu-right pull-right"></span>
+											<!--第二个-->
+											<div class="showlist display_hidden">
+												<div class="listdetail">
+													<div class="listdetail_row ">
+														<ul class="list-unstyled">
+															<li>
+																<p><a href="">All Videos</a></p>
+																<span>All TVshows, movies, and more</span>
+															</li>
+															<li>
+																<p><a href="">All Videos</a></p>
+																<span>All TVshows, movies, and more</span>
+															</li>
+															<li>
+																<p><a href="">All Videos</a></p>
+																<span>All TVshows, movies, and more</span>
+															</li>
+															<li>
+																<p><a href="">All Videos</a></p>
+																<span>All TVshows, movies, and more</span>
+															</li>
+															<li>
+																<p><a href="">All Videos</a></p>
+																<span>All TVshows, movies, and more</span>
+															</li>
+														</ul>
+													</div>
+													<div class="listdetail_row">
+														<h3>More To Explore</h3>
+														<ul class="list-unstyled">
+															<li>
+																<p><a href="">All Videos</a></p>
+																<span>All TVshows, movies, and more</span>
+															</li>
+															<li>
+																<p><a href="">All Videos</a></p>
+																<span>All TVshows, movies, and more</span>
+															</li>
+															<li>
+																<p><a href="">All Videos</a></p>
+																<span>All TVshows, movies, and more</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class=""><p class="pull-left">Appstore for Android</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Echo & Alexa</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Fire Tablets</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Fire TV</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class="fir_drop_content_li_border"><p class="pull-left">Kindle E-readers & Books</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Books & Audible</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Movies, Music & Games</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Electronics, Computers & Office</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Home, Garden, Pets & Tools</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Food & Grocery</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Beauty & Health</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Toys, Kids & Baby</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Clothing, Shoes & Jewelry</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Handmade</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Sports & Outdoors</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class="fir_drop_content_li_border"><p class="pull-left">Automotive & Industrial</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Home Services</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Credit & Payment Products</p><span class="glyphicon glyphicon-menu-right pull-right"></span></li>
+										<li class=""><p class="pull-left">Full Store Directory</p></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<ul style="width: ;height: 18px;" class="list_serarch list-inline pull-left">
+							<li class=""><a href="">Your Amazon.com</a></li>							
+							<li class=""><a href="">Today'sDeals</a></li>
+							<li class=""><a href="">GiftCards</a></li>
+							<li class=""><a href="">Registry</a></li>
+							<li class=""><a href="">Sell</a></li>
+							<li class=""><a href="">Treasure Truck</a></li>
+						</ul>
+					</div>
+					<div class="header_bottom_rig pull-right">
+						<a class="header_bottom_rig_a2">
+							<span class="country_box">
+								<span class="pull-left">En</span>
+								<span class="pull-left span_country"></span>
+							</span>
+							<span style="padding-right: 10px;">
+								<span class="caret" style="margin-bottom: 5px;"></span>
+							</span>
+						</a>
+						<div class="en_drop display_hidden">
+							<span class="glyphicon glyphicon-triangle-top"></span>
+							<div class="en_drop_content">
+								<span><i class="radio_class"></i>English - EN</span>
+								<span><i class="radio_class_nocheck"></i>Español - ES</span>
+								<div class="learn_more">
+									<a href="">Learn more</a>
+								</div>
+								
+							</div>
+						</div>
+						<div class="a_divider"></div>
+						<a class="header_bottom_rig_a3">
+							<span>hello. sign in</span>
+							<span>
+								<strong>Account&List</strong>
+								<span class="caret"></span>
+							</span>
+						</a>
+						<div class="account_drop display_hidden">
+							<span class="glyphicon glyphicon-triangle-top"></span>
+							<div class="accont_drop_content">
+								<div class="account_content_sign">
+									<div class="content_sign_box">
+										<input type="" name="" id="" value="Sign in" class="btn btn-warning"/>
+										<span>New customer? <a href="">Start here.</a></span>
+									</div>
+								</div>
+								<div class="account_content_line ">
+									<p>Your Lists</p>
+									<ul class="list-unstyled">
+										<li><a href="">Create a List</a></li>
+										<li><a href="">Find a List or Registry</a></li>
+										<li><a href="">Find a Gift</a></li>
+										<li><a href="">Save Items from the Web</a></li>
+										<li><a href="">Wedding Registry</a></li>
+										<li><a href="">Baby Registry</a></li>
+										<li><a href="">Friends & Family Gifting</a></li>
+										<li><a href="">Pantry Lists</a></li>
+										<li><a href="">Your Hearts</a></li>
+										<li><a href="">Explore Idea Lists</a></li>
+										<li><a href="">Explore Showroom</a></li>
+										<li><a href="">Scout | Style Explorer</a></li>
+									</ul>
+								</div>
+								<div class="account_content_line2 ">
+									<p>Your Account</p>
+									<ul class="list-unstyled">
+										<li><a href="">Your Account</a></li>
+										<li><a href="">Your Orders</a></li>
+										<li><a href="">Your Lists</a></li>
+										<li><a href="">Your Recommendations</a></li>
+										<li><a href="">Your Subscribe & Save Items</a></li>
+										<li><a href="">Memberships & Subscriptions</a></li>
+										<li><a href="">Your Service Requests</a></li>
+										<li><a href="">Your Prime Membership</a></li>
+										<li><a href="">Your Garage</a></li>
+										<li><a href="">Your Pets</a></li>
+										<li><a href="">Register for a Business Account</a></li>
+										<li><a href="">Your Amazon Credit Cards</a></li>
+										<li><a href="">Your Content and Devices</a></li>
+										<li><a href="">Your Music Library</a></li>
+										<li><a href="">Your Amazon Photos</a></li>
+										<li><a href="">Your Amazon Drive</a></li>
+										<li><a href="">Your Prime Video</a></li>
+										<li><a href="">Your Kindle Unlimited</a></li>
+										<li><a href="">Your Watchlist</a></li>
+										<li><a href="">Your Video Library</a></li>
+										<li><a href="">Your Android Apps & Devices</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<a class="header_bottom_rig_a1">
+							<span>
+								<strong>Orders</strong>
+							</span>
+						</a>
+						<a class="header_bottom_rig_a1 header_bottom_rig_prime">
+							<span>
+								<strong>Try Prime</strong>
+								<span class="caret"></span>
+							</span>
+						</a>
+						<div class="prime_drop display_hidden">
+							<span class="glyphicon glyphicon-triangle-top"></span>
+							<div class="prime_drop_content">
+								<div class="prime_drop_content_line">
+									<div class="prime_drop_content_line_logo">
+										<img src="img/amazon_prime_logo.png"/>
+									</div>
+									<div class="prime_drop_content_line_word">
+										<p>Enjoy fast, free shipping on over 100 million items when you start your 30-day free trial</p>
+									</div>
+									<div class="prime_drop_content_line_btn">
+										<input type="button" name="" id="" value="Try Prime" class="btn btn-warning"/>
+									</div>
+									<div class="prime_drop_content_line_botom">
+										<img src="img/dog.png"/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="shoppingcart.html" class="header_bottom_rig_a4">
+							<span class="cartcar pull-left">
+								<span class="cartnum">3</span>
+							</span>
+							<strong>Cart</strong>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="hover_pageopacity display_hidden"></div>
+		<div class="cartmain">
+			<div class="cartmain_first">
+				<div class="cartmain_first_l pull-left">
+					<div class="cartmain_first_l_card">
+						<a href="">
+							<div class="cartmain_first_l_card_img pull-left">
+								<img src="img/cart_cardpic.png"/>
+							</div>
+							<div class="cartmain_first_l_card_money pull-left">
+								<h3>$75 credit </h3>
+								<p>after first Amazon.com purchase on your new card within three months of approval *See terms</p>
+							</div>
+							<div class="cartmain_first_l_card_apply pull-right">
+								<img src="img/apply_now.png"/>
+							</div>
+						</a>
+					</div>
+					<div class="cartmain_first_l_shop">
+						<h2>Shopping Cart</h2>
+						<div class="first_l_shop_titles">
+							<span>price</span>
+							<span>quantity</span>
+						</div>
+						<div class="first_l_shop_item">
+							<div class="first_l_shop_item_l">
+								<div class="first_l_shop_item_img pull-left">
+									<img src="img/shop_1.jpg"/>
+								</div>
+								<div class="first_l_shop_item_detail pull-left">
+									<p><a href="">PlayStation 4 Slim 1TB Console</a>  by Sony</p>
+									<p>Video Game</p>
+									<p>In Stock</p>
+									<p>Eligible for FREE Shipping</p>
+	 								<input type="checkbox" name="" id="" value="" /><span>This is a gift This is a gift <a href="">Learn more</a></span>
+									<div class="first_l_shop_item_detail_deal">
+										<ul class="list-unstyled list-inline">
+											<li><a href="">Delete</a></li>
+											<li>|</li>
+											<li><a href="">Save for late</a></li>
+											<li>|</li>
+											<li><a href="">Compare with similar items</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div class="first_l_shop_item_price pull-left">$299.99</div>
+							<div class="first_l_shop_item_quantity pull-right" style="width: 80px;">
+								<select class="form-control">
+								  	<option>1</option>
+								  	<option>2</option>
+								 	<option>3</option>
+								  	<option>4</option>
+								  	<option>5</option>
+								  	<option>10+</option>
+								</select>
+							</div>
+						</div>
+						<div class="first_l_shop_item">
+							<div class="first_l_shop_item_l">
+								<div class="first_l_shop_item_img pull-left">
+									<img src="img/shop_2.jpg"/>
+								</div>
+								<div class="first_l_shop_item_detail pull-left">
+									<p><a href="">PlayStation 4 Console - 1TB Slim Edition </a>  by Sony</p>
+									<p>Video Game</p>
+									<p>In Stock</p>
+									<p>Eligible for FREE Shipping</p>
+	 								<input type="checkbox" name="" id="" value="" /><span>This is a gift This is a gift <a href="">Learn more</a></span>
+									<div class="first_l_shop_item_detail_deal">
+										<ul class="list-unstyled list-inline">
+											<li><a href="">Delete</a></li>
+											<li>|</li>
+											<li><a href="">Save for late</a></li>
+											<li>|</li>
+											<li><a href="">Compare with similar items</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div class="first_l_shop_item_price pull-left">$385.00</div>
+							<div class="first_l_shop_item_quantity pull-right" style="width: 80px;">
+								<select class="form-control">
+								  	<option>1</option>
+								  	<option>2</option>
+								 	<option>3</option>
+								  	<option>4</option>
+								  	<option>5</option>
+								  	<option>10+</option>
+								</select>
+							</div>
+						</div>
+						<div class="first_l_shop_item">
+							<div class="first_l_shop_item_l">
+								<div class="first_l_shop_item_img pull-left">
+									<img src="img/shop_3.jpg"/>
+								</div>
+								<div class="first_l_shop_item_detail pull-left">
+									<p><a href="game.html">Marvel’s Spider-Man - PlayStation 4 </a>  by Sony</p>
+									<p>Video Game</p>
+									<p>In Stock</p>
+									<p>Eligible for FREE Shipping</p>
+	 								<input type="checkbox" name="" id="" value="" /><span>This is a gift This is a gift <a href="">Learn more</a></span>
+									<div class="first_l_shop_item_detail_deal">
+										<ul class="list-unstyled list-inline">
+											<li><a href="">Delete</a></li>
+											<li>|</li>
+											<li><a href="">Save for late</a></li>
+											<li>|</li>
+											<li><a href="">Compare with similar items</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div class="first_l_shop_item_price pull-left">$59.75</div>
+							<div class="first_l_shop_item_quantity pull-right" style="width: 80px;">
+								<select class="form-control">
+								  	<option>1</option>
+								  	<option>2</option>
+								 	<option>3</option>
+								  	<option>4</option>
+								  	<option>5</option>
+								  	<option>10+</option>
+								</select>
+							</div>
+						</div>
+						<div class="first_l_shop_count">
+							<h2 class="text-right">Subtotal (<span class="count_num">3</span> items): <span class="count_money">$744.74</span></h2>
+							<div class="first_l_shop_count_tips">
+								<p>The price and availability of items at Amazon.com are subject to change. The Cart is a temporary place to store a list of your items and reflects each item's most recent price. </p>
+								<p><a href="">Learn more</a></p>
+								<p>Do you have a gift card or promotional code? We'll ask you to enter your claim code when it's time to pay.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cartmain_first_r pull-right">
+					<div class="cartmain_first_r_top">
+						<div class="cartmain_first_r_top_head">
+							<p><span class="glyphicon glyphicon-ok"></span>Part of your order qualifies for FREE Shipping. <span>Choose this option at checkout.</span></p>
+							<a href="">See details</a>
+						</div>
+						<div class="cartmain_first_r_top_bottom">
+							<h2 class="text-center">Subtotal (<span class="count_num">3</span> items): <span class="count_money">$744.74</span></h2>
+							<input type="checkbox" name="" id="" value="" /><span>This order contains a gift</span>
+							<div class="checkout">
+								<button class="btn btn-warning">Proceed to checkout</button>
+							</div>
+							<img src="img/or.jpg"/>
+							<p class="text-center"><a href="">Sign in</a> to turn on 1-Click ordering.</p>
+						</div>
+					</div>
+					<div class="cartmain_first_r_picshow">
+						<div class="cartmain_first_r_picshow_other">
+							<h5>Customers who shopped for PlayStation 4 Console - 1TB Slim Edition also shopped for:</h5>
+							<ul class="list-unstyled">
+								<li>
+									<div class="r_picshow_other_img pull-left">
+										<a href="">
+											<img src="img/r_picshow1.jpg"/>
+										</a>
+									</div>
+									<div class="r_picshow_other_detail pull-left">
+										<p><a href="">PlayStation 4 Slim 1TB Limited Edition Console - Days of Play Bundle [Discontinued]</a></p>
+										<p>Sony</p>
+										<p><a href=""><span class="r_star"></span>54</a></p>
+										<p>$344.95<span class="r_prime"></span></p> 
+										<button>add to cart</button>
+									</div>
+								</li>
+								<li>
+									<div class="r_picshow_other_img pull-left">
+										<a href="">
+											<img src="img/r_picshow2.jpg"/>
+										</a>
+									</div>
+									<div class="r_picshow_other_detail pull-left">
+										<p><a href="">Playstation 4 Pro 1TB Console with Extra Crystal Blue Dualshock 4 Wireless Controller Bundle</a></p>
+										<p>Sony</p>
+										<p><a href=""><span class="r_star"></span>94</a></p>
+										<p>$480.95<span class="r_prime"></span></p> 
+										<button>add to cart</button>
+									</div>
+								</li>
+								<li>
+									<div class="r_picshow_other_img pull-left">
+										<a href="">
+											<img src="img/r_picshow3.jpg"/>
+										</a>
+									</div>
+									<div class="r_picshow_other_detail pull-left">
+										<p><a href="">PlayStation 4 Slim 1TB Limited Edition Console - Days of Play Bundle [Discontinued]</a></p>
+										<p>Sony</p>
+										<p><a href=""><span class="r_star"></span>57</a></p>
+										<p>$333.95<span class="r_prime"></span></p> 
+										<button>add to cart</button>
+									</div>
+								</li>
+								<li>
+									<div class="r_picshow_other_img pull-left">
+										<a href="">
+											<img src="img/r_picshow4.jpg"/>
+										</a>
+									</div>
+									<div class="r_picshow_other_detail pull-left">
+										<p><a href="">PlayStation 4 Pro 1TB Console</a></p>
+										<p>Sony</p>
+										<p><a href=""><span class="r_star"></span>154</a></p>
+										<p>$384.99<span class="r_prime"></span></p> 
+										<button>add to cart</button>
+									</div>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="cartmain_second">
+				<h3>Your recently viewed items and featured recommendations</h3>
+				<!--Inspired by your browsing history-->
+				<div class="cartmain_second_inspired">
+					<h4>Inspired by your browsing history</h3>
+					<p class="text-right">Page <span class="page_inspired">1</span> of 2</p>
+					<div class="cartmain_second_inspired_lunbo">
+						<ul class="list-unstyled list-inline">
+							<li>
+								<a href="">
+									<img src="img/inspired_1.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/inspired_2.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/inspired_3.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/inspired_4.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/inspired_5.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/inspired_6.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+						</ul>
+						<ul class="list-unstyled list-inline display_hidden">
+							<li>
+								<a href="">
+									<img src="img/inspired1_1.jpg"/>
+									<div class="inspired_lunbo_name">
+										1Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/inspired1_2.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/inspired1_3.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/inspired1_4.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/inspired1_5.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/inspired1_6.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+						</ul>
+						<div class="inspired_lunbo_control_l"><span class="glyphicon glyphicon-chevron-left"></span></div>
+						<div class="inspired_lunbo_control_r"><span class="glyphicon glyphicon-chevron-right"></span></div>
+					</div>	
+				</div>
+				<!--Best Sellers-->
+				<div class="cartmain_second_bestseller">
+					<h4>Inspired by your browsing history</h3>
+					<p class="text-right">Page <span class="page_inspired">1</span> of 2</p>
+					<div class="cartmain_second_inspired_lunbo">
+						<ul class="list-unstyled list-inline">
+							<li>
+								<a href="">
+									<img src="img/bestseller1_1.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/bestseller1_2.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/bestseller1_3.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/bestseller1_4.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/bestseller1_4.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/bestseller1_5.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+						</ul>
+						<ul class="list-unstyled list-inline display_hidden">
+							<li>
+								<a href="">
+									<img src="img/bestseller2_6.jpg"/>
+									<div class="inspired_lunbo_name">
+										1Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/bestseller2_1.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/bestseller2_2.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/bestseller2_3.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/bestseller2_4.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/bestseller2_5.jpg"/>
+									<div class="inspired_lunbo_name">
+										Red Dead Redemption 2: Special Edition - PlayStation 4
+									</div>
+								</a>
+								<div class="inspired_lunbo_grade">
+									<p>Rockstar Games</p>
+									<p><span class="r_star"></span><a href="">6</a></p>
+									<p>$79.96<span class="r_prime"></span></p>
+								</div>
+							</li>
+						</ul>
+						<div class="inspired_lunbo_control_l"><span class="glyphicon glyphicon-chevron-left"></span></div>
+						<div class="inspired_lunbo_control_r"><span class="glyphicon glyphicon-chevron-right"></span></div>
+					</div>	
+				</div>
+				<div class="cartmain_second_bottom">
+					
+				</div>
+			</div>
+			
+		</div>
+		<footer>
+			<div class="footer_toBar">
+				<p class="text-center">Back to Top</p>
+			</div>
+			<div class="footer_list">
+				<div class="footer_list_top">
+					<div class="footer_list_top_1">
+						<h3>Get to Know Us</h3>
+						<ul class="list-unstyled pull-left">
+							<li><a href="">Careers</a></li>
+							<li><a href="">Blog</a></li>
+							<li><a href="">About Amazon</a></li>
+							<li><a href="">Investor Relations</a></li>
+							<li><a href="">Amazon Devices</a></li>
+						</ul>
+					</div>
+					<div class="footer_list_top_1">
+						<h3>Make Money with Us</h3>
+						<ul class="list-unstyled">
+							<li><a href="">Sell on Amazon</a></li>
+							<li><a href="">Sell on Amazon Handmade</a></li>
+							<li><a href="">Sell Your Services on Amazon</a></li>
+							<li><a href="">Sell on Amazon Business</a></li>
+							<li><a href="">Sell Your Apps on Amazon</a></li>
+							<li><a href="">Become an Affiliate</a></li>
+							<li><a href="">Advertise Your Products</a></li>
+							<li><a href="">Self-Publish with Us</a></li>
+							<li><a href="">›See all</a></li>
+						</ul>
+					</div>
+					<div class="footer_list_top_1">
+						<h3>Amazon Payment Products</h3><ul class="list-unstyled">
+							<li><a href="">Amazon Rewards Visa Signature Cards</a></li>
+							<li><a href="">Amazon.com Store Card</a></li>
+							<li><a href="">Amazon.com Corporate Credit Line</a></li>
+							<li><a href="">Shop with Points</a></li>
+							<li><a href="">Credit Card Marketplace</a></li>
+							<li><a href="">Reload Your Balance</a></li>
+							<li><a href="">Amazon Currency Converter</a></li>
+						</ul>
+					</div>
+					<div class="footer_list_top_2">
+						<h3>Let Us Help You</h3>
+						<ul class="list-unstyled">
+							<li><a href="">Your Account</a></li>
+							<li><a href="">Your Orders</a></li>
+							<li><a href="">Shipping Rates & Policies</a></li>
+							<li><a href="">Amazon Prime</a></li>
+							<li><a href="">Returns & Replacements</a></li>
+							<li><a href="">Manage Your Content and Devices</a></li>
+							<li><a href="">Amazon Assistant</a></li>
+							<li><a href="">Help</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_list_bottom">
+					<div class="footer_list_bottom_content">
+						<div class="footer_list_bottom_content_logo">
+							<span></span>
+						</div>
+						<div class="footer_list_bottom_content_country">
+							<a href="">
+								<span></span>
+								English
+							</a>
+							<a href="">
+								<span></span>
+								United States
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer_bottomlist">
+				<div class="bottomlist_line">
+					<table border="0" cellspacing="0" cellpadding="">
+						<tr>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="">
+									AmazonFresh<br />
+									<span>
+										Groceries & More<br />
+										Right To Your Door
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+							<td>
+								<a href="">
+									Amazon Music<br />
+									<span>
+										Stream millions<br />
+										of songs
+									</span>
+								</a>
+							</td>
+						</tr>
+					
+						
+					</table>
+				</div>
+				<div class="bottomlist_under">
+					<p class="text-center"><a href="">Conditions of Use</a> <a href=""> Notice</a> <a href="">Interest-BasedAds</a> © 1996-2018, Amazon.com, Inc. or its affiliates</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+</html>
